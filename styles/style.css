@@ -12,6 +12,7 @@ body{
 	background-height:100%;
 	margin:0 0 0 0;
 	overflow-x:hidden;
+	font-size:20px;
 }
 
 h1{
@@ -31,7 +32,7 @@ h2{
 
 p, li{
 	font-family: "Roboto-Light";
-	font-size: 20px;
+	font-size: 100%;
 }
 
 
@@ -93,6 +94,7 @@ p, li{
 	background-image: url("pics/back8.jpg");
 	background-repeat: no-repeat;
 	background-position: 51% 60%;
+	/*background-size:cover; is a cool option*/
 	height:99%;
 	width: 100%;
 	z-index:1;
@@ -163,6 +165,31 @@ p, li{
 	color: white;
 }
 
+#contact img{
+	width:20px;
+	margin-bottom: -3px;
+	margin-right:5px;
+}
+.contactbtn{
+	margin:30px;
+	padding:10px 15px 10px 15px;
+	border-radius:25px;
+	background-color: transparent;
+	color: white;
+	font-family: 'Roboto-light';
+	font-size:20px;
+	border: white 2px solid;
+	transition: all 0.3s ease 0s;
+}
+
+.contactbtn:hover{
+	background-color: white;
+	color: #dba87b;
+	font-family: 'Roboto-light';
+	font-size:20px;
+	border: #dba87b 2px solid;
+	transition: all 0.3s ease 0s;
+}
 footer{
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -271,52 +298,7 @@ nav a:hover{
 	z-index: 100;
 	top: 2%;
 }
-/*CORNER NAVIGATION*************************/
-.rotate {
-	-webkit-transform: rotate(-28.5deg); /* Safari */
-	-moz-transform: rotate(-40deg); /* Firefox */
-	-ms-transform: rotate(-40deg); /* IE */
-	-o-transform: rotate(-40deg); /* Opera */
-	/*from https://css-tricks.com/snippets/css/text-rotation/*/
-}
 
-/*triangle nav
-.navtri{
-	z-index:-10;
-	position:absolute;
-	top:0;
-	left:0;
-	width:580px;
-}
-
-.nav{
-	position:absolute;
-	top:75px;
-	left:-45px;
-	list-style-type: none;
-}
-.nav li{
-	display: inline-block;
-	padding-right: 15px;
-}
-
-.nav a{
-	color: black;
-	font-family: "Roboto-Regular";
-	letter-spacing: 2px;
-	font-size: 18px;
-	text-decoration: none;
-	transition:color .5s linear;
-}
-.nav a:visited{
-	color: black;
-	transition:color .5s linear;
-}
-.nav a:hover{
-	color:lightgrey;
-	transition:color .5s linear;
-}
-*/
 /************RESPONSIVE GRID SYSTEM*********************************/
 /*  ROWS  */
 .row {
