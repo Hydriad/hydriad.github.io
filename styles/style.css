@@ -325,9 +325,9 @@ nav a:hover{
 .group:after {
 	clear:both;
 }
-.group {
+/*.group {
     zoom:1; /* For IE 6/7 */
-}
+/*}*/
 
 /*  GRID OF THREE  */
 .span_3_of_3 {
