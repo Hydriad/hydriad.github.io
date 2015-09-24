@@ -30,7 +30,7 @@ h2{
 	color: white;
 }
 
-p, li{
+p, li, a{
 	font-family: "Roboto-Light";
 	font-size: 100%;
 }
@@ -104,7 +104,8 @@ p, li{
 	background-color: #dba87b;
 	padding: 50px 15% 50px 15%;
 }
-#aproach h1{
+
+#aproach h1, #approach p{
 	color: white;
 }
 #approach h2{
@@ -125,7 +126,7 @@ p, li{
 	background-attachment: fixed;
 	padding:0;
 }
-#skills h1,p,li{
+#skills h1, #skills p, #skills li{
 	color: white;
 }
 #skills h2{
@@ -135,15 +136,24 @@ p, li{
 
 #portfolio{
 	background-color: white;
-	height: 400px;
+	min-height: 400px;
 	padding:100px;
 }
-#portfolio h1, h2, p{
+#portfolio h1, #portfolio h2, #portfolio p{
 	color: #262a33;
+}
+#portfolio a{
+	color: #262a33;
+	text-decoration: none;
+	transition:color .3s linear;
+}
+#portfolio a:hover{
+	color: #dba87b;
+	transition:color .3s linear;
 }
 
 #blankback{
-	background-image: url("pics/beach4-2.jpg");
+	background-image: url("pics/beach4-3.jpg");
 	background-position: 50% 50%;
 	background-attachment: fixed;
 	height: 150px;
@@ -153,7 +163,7 @@ p, li{
 	background-color: #262a33;
 	padding: 100px 20% 100px 20%;
 }
-#about h1, p{
+#about h1, #about p{
 	color: white;
 }
 
@@ -161,32 +171,36 @@ p, li{
 	background-color: #dba87b;
 	padding: 50px 20% 100px 20%;
 }
-#contact h1, p{
+#contact h1, #contact p{
 	color: white;
 }
 
 #contact img{
 	width:20px;
 	margin-bottom: -3px;
-	margin-right:5px;
+	margin-right:8px;
 }
-.contactbtn, #contact a{
-	margin:30px;
-	padding:10px 15px 10px 15px;
+#contact a{
+	float: right;
+	position: relative;
+	left:-26%;
+	text-align: center;
+	padding:10px 20px 10px 15px;
+	margin-bottom:15px;
 	border-radius:25px;
 	background-color: transparent;
 	color: white;
-	font-family: 'Roboto-light';
+	font-family: 'Roboto-regular';
 	font-size:20px;
 	border: white 2px solid;
 	transition: all 0.3s ease 0s;
 	text-decoration: none;
 }
 
-.contactbtn:hover, #contact a:hover{
+#contact a:hover{
 	background-color: white;
 	color: #dba87b;
-	font-family: 'Roboto-light';
+	font-family: 'Roboto-regular';
 	font-size:20px;
 	border: #dba87b 2px solid;
 	transition: all 0.3s ease;
@@ -210,10 +224,9 @@ nav{
 	background-color: transparent;
 	font-family: "Roboto-Regular";
 	position: absolute;
-	top:83%;
+	top:80%;
 	z-index: 100;
 	width:100%;
-	height: 50px;
 	padding-top:0px;
 	text-align: center;
 }
@@ -228,9 +241,10 @@ nav ul{
 	top:0px;
 	transition:opacity 1s ease-out;
 }
-#navfixed a, a:visited{
+#navfixed a, #navfixed a:visited{
 	text-decoration: none;
 	color: #262a33;
+	font-family: "Roboto-Regular";
 	transition:color .3s linear;
 }
 #navfixed a:hover{
@@ -253,7 +267,7 @@ nav li{
 	padding-left:30px;
 }
 
-nav a, a:visited{
+nav a, nav a:visited{
 	text-decoration: none;
 	color: white;
 	transition:color .3s linear;
@@ -311,7 +325,7 @@ nav a:hover{
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 6%;
+	margin: 1% 0 1% 7%;
 }
 .col:first-child { margin-left: 0; }
 
@@ -337,7 +351,7 @@ nav a:hover{
 	width: 66.1%;
 }
 .span_1_of_3 {
-	width: 28%;
+	width: 28.5%;
 }
 
 .float{
@@ -402,6 +416,11 @@ nav a:hover{
 	nav a{
 		font-size: 16px;
 		font-family: "Roboto-Regular";
+	}
+
+	#contact a{
+		float:left;
+		left:40%;
 	}
 
 }

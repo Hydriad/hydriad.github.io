@@ -9,7 +9,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           //the top - # sets it that # of pixels above div
-          scrollTop: target.offset().top-50
+          scrollTop: target.offset().top-64
         }, 500);
         return false;
       }
@@ -32,7 +32,7 @@ $(function() {
 $(document).ready(function(){
      $(window).bind('scroll', function() {
      var navHeight = $( window ).height();
-       if ($(window).scrollTop() > navHeight-51) {
+       if ($(window).scrollTop() > navHeight-72) {
           $('#navfixed').addClass('vis');
           //$('#navfixed').removeClass('notvis');
        }
