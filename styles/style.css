@@ -91,7 +91,7 @@ p, li{
 
 #absolutelanding{
 	position:absolute;
-	background-image: url("pics/back8.jpg");
+	background-image: url("pics/back8-2.jpg");
 	background-repeat: no-repeat;
 	background-position: 51% 60%;
 	/*background-size:cover; is a cool option*/
@@ -120,7 +120,7 @@ p, li{
 
 #skills{
 	background-color: #262a33;
-	background-image: url("pics/beach4-2.jpg");
+	background-image: url("pics/beach4-3.jpg");
 	background-position: 50% 50%;
 	background-attachment: fixed;
 	padding:0;
@@ -325,9 +325,9 @@ nav a:hover{
 .group:after {
 	clear:both;
 }
-/*.group {
+.group {
     zoom:1; /* For IE 6/7 */
-/*}*/
+}
 
 /*  GRID OF THREE  */
 .span_3_of_3 {
