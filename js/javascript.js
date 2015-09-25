@@ -9,7 +9,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           //the top - # sets it that # of pixels above div
-          scrollTop: target.offset().top-64
+          scrollTop: target.offset().top-69
         }, 500);
         return false;
       }

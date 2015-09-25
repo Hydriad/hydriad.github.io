@@ -22,7 +22,6 @@ h1{
 	text-align: center;
 }
 
-
 h2{
 	font-size: 25px;
 	font-family: "Roboto-thin";
@@ -33,6 +32,7 @@ h2{
 p, li, a{
 	font-family: "Roboto-Light";
 	font-size: 100%;
+	line-height: 28px;
 }
 
 
@@ -137,7 +137,7 @@ p, li, a{
 #portfolio{
 	background-color: white;
 	min-height: 400px;
-	padding:100px;
+	padding:50px;
 }
 #portfolio h1, #portfolio h2, #portfolio p{
 	color: #262a33;
@@ -150,6 +150,46 @@ p, li, a{
 #portfolio a:hover{
 	color: #dba87b;
 	transition:color .3s linear;
+}
+#portfolio h2{
+	font-family: "Roboto-Regular";
+	text-align: center;
+}
+#portfolio img{
+	width:200px;
+	margin-bottom: 30px;
+}
+/*PREVIEW IMAGES***************************************/
+.prev{
+	background-size:cover;
+	width:150px;
+	height:150px;
+	margin-bottom:30px;	
+}
+
+#teem{
+	background-image: url("pics/prev/teemprev.png");
+	transition:all 0.3s ease-in-out;
+}
+#teem:hover{
+	background-image: url("pics/prev/teemprevcolor.png");
+	transition:all 0.3s ease-in-out;
+}
+#bmtm{
+	background-image: url("pics/prev/bmtmprev.png");
+	transition:all 0.3s ease-in-out;
+}
+#bmtm:hover{
+	background-image: url("pics/prev/bmtmprevcolor.png");
+	transition:all 0.3s ease-in-out;
+}
+#quid{
+	background-image: url("pics/prev/quidprev.png");
+	transition:all 0.3s ease-in-out;
+}
+#quid:hover{
+	background-image: url("pics/prev/quidprevcolor.png");
+	transition:all 0.3s ease-in-out;
 }
 
 #blankback{
@@ -169,7 +209,7 @@ p, li, a{
 
 #contact{
 	background-color: #dba87b;
-	padding: 50px 20% 100px 20%;
+	padding: 50px 25% 100px 25%;
 }
 #contact h1, #contact p{
 	color: white;
@@ -181,9 +221,9 @@ p, li, a{
 	margin-right:8px;
 }
 #contact a{
-	float: right;
+	/*float: right;
 	position: relative;
-	left:-26%;
+	left:-26%;*/
 	text-align: center;
 	padding:10px 20px 10px 15px;
 	margin-bottom:15px;
@@ -418,9 +458,12 @@ nav a:hover{
 		font-family: "Roboto-Regular";
 	}
 
-	#contact a{
+	#contact .col{
+		/*
 		float:left;
 		left:40%;
+		*/
+		margin-bottom: 40px;
 	}
 
 }
