@@ -28,11 +28,11 @@ $(function() {
 //jquery height reference: https://api.jquery.com/height/
 //end setting height
 
-//TRYAING AGAIIN
+//Set nav fixed at certain point on scroll
 $(document).ready(function(){
      $(window).bind('scroll', function() {
      var navHeight = $( window ).height();
-       if ($(window).scrollTop() > navHeight-72) {
+       if ($(window).scrollTop() > navHeight-76) {
           $('#navfixed').addClass('vis');
           //$('#navfixed').removeClass('notvis');
        }
