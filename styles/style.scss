@@ -231,8 +231,7 @@ p, li, a{
 	  transition:width 0.2s ease-out;
 	  transition-delay:0.15s;
 	  .bgimg{
-	  	min-height:350px;
-	  	height:100%;
+	  	height:350px;
 	  	background-size:cover;
 	  	transition:background-image .5s ease;
 		}
@@ -535,7 +534,7 @@ nav{
 		background-position: 66% 55%;
 	}
 
-	#about, #approach, #portfolio, #ienjoy, #contact{
+	#about, #approach, #portfolio, #contact{
 		padding-left: 5%;
 		padding-right: 5%;
 	}
@@ -544,6 +543,25 @@ nav{
 		padding-left: 2% ;
 		padding-right: 2%;
 	}
+	#ienjoy{
+		padding-left: 15%;
+		padding-right: 15%;
+		li{
+			float: none;
+			width:100%;
+		}
+		.accordion:hover li{
+		  width:100%;
+		}
+		.accordion li:hover{
+		  width:100%;
+		}
+		.bgimg{
+			height: 200px;
+			width:100%;
+		}	
+	}
+
 	nav li{
 		padding-left: 7px;
 		padding-right: 7px;
