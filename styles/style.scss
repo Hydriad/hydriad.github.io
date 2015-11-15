@@ -1,0 +1,586 @@
+/*color scheme*/
+/*  beige: 			dba87b  */
+/*  blue: 			354a65  */
+/*  dark blue: 	262a33   */
+
+$myblue: #262a33;
+$mybeige: #dba87b;
+
+/*********************************GENERAL*****************************/
+body{
+	background-color:lightgrey;
+	background-position: 50% 34%;
+	background-height:100%;
+	margin:0 0 0 0;
+	overflow-x:hidden;
+	font-size:20px;
+	font-family: "Roboto-Light";
+}
+
+//preload images https://stackoverflow.com/questions/13286745/css-avoid-image-hover-first-time-blinking
+body:after{
+ display:none;
+ content: url("pics/enjoy/teach.jpg") url("pics/enjoy/edit.jpg") url("pics/enjoy/hike.jpg") url("pics/enjoy/henna.jpg") url("pics/enjoy/travel.jpg") url("pics/prev/bmtmprevcolor.png") url("pics/prev/quidprevcolor.png") url("pics/prev/teemprevcolor.png");
+}
+
+h1{
+	font-size: 50px;
+	font-family: "Roboto-thin";
+	color: white;
+	text-align: center;
+}
+
+h2{
+	font-size: 25px;
+	font-family: "Roboto-thin";
+	margin-top:-10px;
+	color: white;
+}
+
+p, li, a{
+	font-family: "Roboto-Light";
+	font-size: 100%;
+	line-height: 28px;
+}
+
+
+/*********************************sections*****************************/
+.section{
+	margin-top:0;
+	margin-bottom:0;
+	z-index: 50;
+	position:relative;
+}
+
+/***************************HOME/LANDING******************************/
+#section1{
+	margin:0;
+	padding:0;
+}
+
+#absolutelanding{
+	position:absolute;
+	background-image: url("pics/back8-2.jpg");
+	background-repeat: no-repeat;
+	background-position: 51% 60%;
+	/*background-size:cover; is a cool option*/
+	height:99%;
+	width: 100%;
+	z-index:1;
+}
+
+#lgtoptri{
+	z-index: 1;
+	position:absolute;
+	width:100%;
+	top: 0;
+	left: 0;
+}
+
+.nametri{
+	z-index: 1;
+	position:absolute;
+	width:31%;
+	bottom:0;
+	right:0;
+	overflow:hidden;
+}
+
+
+/****************************ABOUT*********************************/
+#about{
+	background-color: $myblue;
+	padding: 100px 20% 100px 20%;
+	h1, p{
+		color: white;
+	}
+}
+
+
+/****************************APPROACH******************************/
+#approach{
+	background-color: $mybeige;
+	padding: 50px 15% 50px 15%;
+
+	h1, p{
+		color: white;
+	}
+	h2{
+		color: white;
+		font-family: "Roboto-Regular";
+	}
+}
+
+
+/******************************SKILLS*****************************/
+#blankback{
+	background-image: url("pics/beach4-3.jpg");
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	height: 150px;
+}
+
+#skillssemitrans{
+	background-color: rgba(38,42,51,0.65);
+	padding: 50px;
+	min-height: 400px;
+}
+
+#skills{
+	background-color: $myblue;
+	background-image: url("pics/beach4-3.jpg");
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	padding:0;
+	h1, p, li{
+		color: white;
+	}
+	h2{
+		color: white;
+		font-family: "Roboto-Regular";
+	}
+}
+
+
+/******************************PORTFOLIO*****************************/
+#portfolio{
+	background-color: white;
+	min-height: 400px;
+	padding:50px 10% 50px 10%;
+	h1, h2, p{
+		color: $myblue;
+	}
+	a{
+		color: $myblue;
+		text-decoration: none;
+		transition:color .3s linear;
+		&:hover{
+			color: $mybeige;
+			transition:color .3s linear;
+		}
+	}
+
+	h2{
+		font-family: "Roboto-Regular";
+		text-align: center;
+	}
+	img{
+		width:200px;
+		margin-bottom: 30px;
+	}
+}
+/***********PREVIEW IMAGES***********************/
+.prev{
+	background-size:cover;
+	width:150px;
+	height:150px;
+	margin-bottom:30px;	
+}
+
+#teem{
+	background-image: url("pics/prev/teemprev.png");
+	transition:all 0.3s ease-in-out;
+	&:hover{
+		background-image: url("pics/prev/teemprevcolor.png");
+		transition:all 0.3s ease-in-out;
+	}
+}
+
+#bmtm{
+	background-image: url("pics/prev/bmtmprev.png");
+	transition:all 0.3s ease-in-out;
+	&:hover{
+		background-image: url("pics/prev/bmtmprevcolor.png");
+		transition:all 0.3s ease-in-out;
+	}
+}
+
+#quid{
+	background-image: url("pics/prev/quidprev.png");
+	transition:all 0.3s ease-in-out;
+	&:hover{
+		background-image: url("pics/prev/quidprevcolor.png");
+		transition:all 0.3s ease-in-out;
+	}
+}
+
+
+/*****************************I ALSO LOVE*****************************/
+#ienjoy{
+	background-color: $myblue;
+	color:white;
+	text-align:center;
+	padding: 50px 5% 50px 5%;
+}
+
+/************ACCORDION****************
+  source: http://csswizardry.com/2011/02/pure-css3-accordion*/
+.accordion{
+  overflow:hidden;
+  list-style:none;
+  padding:0;
+  margin:0;
+  width:100%;
+  ul{
+  	margin:0;
+  }
+	li{
+	  float:left;
+	  width:19%;
+	  overflow:hidden;
+	  transition:width 0.2s ease-out;
+	  transition-delay:0.15s;
+	  .bgimg{
+	  	min-height:350px;
+	  	height:100%;
+	  	background-size:cover;
+	  	transition:background-image .5s ease;
+		}
+		.bg1{
+			background-image:url("pics/enjoy/teachbw.jpg");
+			background-position:center;
+			transition:background-image .5s ease;
+			&:hover{
+				background-image:url("pics/enjoy/teach.jpg");
+				transition:background-image .5s ease;
+			}
+		}
+		.bg2{
+			background-image:url("pics/enjoy/editbw.jpg");
+			background-position:right;
+			transition:background-image .5s ease;
+			&:hover{
+				background-image:url("pics/enjoy/edit.jpg");
+				transition:background-image .5s ease;
+			}	
+		}	 
+		.bg3{
+			background-image:url("pics/enjoy/hikebw.jpg");
+			background-position:left;
+			transition:background-image .5s ease;
+			&:hover{
+				background-image:url("pics/enjoy/hike.jpg");
+				transition:background-image .5s ease;
+			}	
+		}	
+		.bg4{
+			background-image:url("pics/enjoy/hennabw.jpg");
+			background-position:center;
+			transition:background-image .5s ease;
+			&:hover{
+				background-image:url("pics/enjoy/henna.jpg");
+				transition:background-image .5s ease;
+			}
+		}	 
+		.bg5{
+			background-image:url("pics/enjoy/travelbw.jpg");
+			background-position:right top;
+			transition:background-image .5s ease;
+			&:hover{
+				background-image:url("pics/enjoy/travel.jpg");
+				transition:background-image .5s ease;
+			}
+		}	  	
+	  border: 2px $myblue dashed;
+	}
+}
+.accordion:hover li{
+  width:14.5%;
+}
+.accordion li:hover{
+  width:38%;
+}
+
+
+/*********************************CONTACT*****************************/
+#contact{
+	background-color: $mybeige;
+	padding: 50px 25% 100px 25%;
+	h1, p{
+		color: white;
+	}
+	img{
+		width:20px;
+		margin-bottom: -3px;
+		margin-right:8px;
+	}
+	a{
+		text-align: center;
+		padding:10px 20px 10px 15px;
+		margin-bottom:15px;
+		border-radius:25px;
+		background-color: transparent;
+		color: white;
+		font-family: 'Roboto-regular';
+		font-size:20px;
+		border: white 2px solid;
+		transition: all 0.3s ease 0s;
+		text-decoration: none;
+		&:hover{
+			background-color: white;
+			color: $mybeige;
+			border: $mybeige 2px solid;
+			transition: all 0.3s ease;
+		}
+	}
+	
+}
+
+
+/*******************************FOOTER*****************************/
+footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: $myblue;
+	color:white;
+	p{
+		color: white;
+	}
+}
+
+
+/*******************************NAVIGATION*****************************/
+/*HEADER************************************/
+/*https://css-tricks.com/scroll-fix-content/*/
+
+nav{
+	background-color: transparent;
+	font-family: "Roboto-Regular";
+	position: absolute;
+	top:80%;
+	z-index: 100;
+	width:100%;
+	padding-top:0px;
+	text-align: center;
+	ul{
+		padding:0;
+	}
+	li{
+		list-style-type: none;
+		display: inline;
+		padding-right: 30px;
+		padding-left:30px;
+	}
+	a, a:visited{
+		text-decoration: none;
+		color: white;
+		transition:color .3s linear;
+		font-size: 18px;
+		&:hover{
+			color: $mybeige;
+			transition:color .3s linear;
+		}
+	}
+
+}
+
+#navfixed{
+	background-color: white;
+	position: fixed;
+	top:0px;
+	transition:opacity 1s ease-out;
+	a, a:visited{
+		text-decoration: none;
+		color: $myblue;
+		font-family: "Roboto-Regular";
+		transition:color .3s linear;
+		&:hover{
+			color: $mybeige;
+			transition:color .3s linear;
+		}
+	}
+
+}
+
+.notvis{
+	display: none;
+}
+
+.vis{
+	display: block;
+}
+
+
+/*ARROWS************************************/
+.arrow{
+	position:absolute;
+	left: 49%;
+	width: 40px;
+	height: 40px;
+	z-index: 200;
+	margin: 0px;
+	transition:width .3s, height .3s, opacity .3s, margin .3s;
+}
+
+.arrow:hover, .arrowbetween:hover{
+	opacity:1;
+	width: 50px;
+	height: 50px;
+	margin: -55px;
+	transition:width .3s, height .3s, opacity .3s, margin .3s;
+}
+
+.arrowbetween{
+	width: 40px;
+	height: 40px;
+	z-index: 300;
+	position:relative;
+	margin-bottom: -50px;
+	transition:width .3s, height .3s, opacity .3s, margin .3s;
+}
+
+.downarrow{
+	z-index: 100;
+	bottom: 7%;
+}
+
+#section1 .downarrow{
+	bottom: 2%;
+}
+
+.uparrow{
+	z-index: 100;
+	top: 2%;
+}
+
+
+/*********************RESPONSIVE GRID SYSTEM***************************/
+/*  ROWS  */
+.row {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 7%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 28.5%;
+}
+.span_1_of_5 {
+	width: 19.5%;
+}
+
+.float{
+	width:35.7%;
+	padding: 0px 7% 0px 7%;
+}
+
+.float li{
+	list-style-type: none;
+}
+
+#floatleft{
+	float:left;
+	text-align: right;
+}
+
+#floatright{
+	float:right;
+	text-align: left;
+	border-left: 1px white dashed;
+	li{
+		margin-left: -39px;
+	}
+}
+
+
+/*****************************MEDIA QUERIES****************************/
+/*for changing window size*/
+/*  GO FULL WIDTH AT LESS THAN 1024 PIXELS */
+
+@media only screen and (max-width: 1024px) {
+
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3, .span_1_of_5 { 
+		width: 100%;
+	}
+
+	.uparrow{
+		top:6%;
+	}
+
+	#absolutelanding{
+		height:90%;
+		background-position: 66% 55%;
+	}
+
+	#about, #approach, #portfolio, #ienjoy, #contact{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	#skillssemitrans{
+		padding-left: 2% ;
+		padding-right: 2%;
+	}
+	nav li{
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+	nav a{
+		font-size: 14px;
+		font-family: "Roboto-Regular";
+	}
+
+	#contact .col{
+		/*
+		float:left;
+		left:40%;
+		*/
+		margin-bottom: 40px;
+	}
+
+}
+
+/****************************FONTS**************************/
+@font-face{
+	font-family:'Roboto-Thin';
+	src: url('fonts/Roboto-Thin.ttf');
+}
+@font-face{
+	font-family:'Roboto-Light';
+	src: url('fonts/Roboto-Light.ttf');
+}
+@font-face{
+	font-family:'Roboto-Regular';
+	src: url('fonts/Roboto-Regular.ttf');
+}
+@font-face{
+	font-family:'Roboto-Bold';
+	src: url('fonts/Roboto-Bold.ttf');
+}
+@font-face{
+	font-family:'Roboto-Black';
+	src: url('fonts/Roboto-Black.ttf');
+}
