@@ -111,6 +111,24 @@ p, li, a {
     color: white;
     font-family: "Roboto-Regular"; }
 
+.float {
+  width: 35.7%;
+  padding: 0px 7% 0px 7%; }
+
+.float li {
+  list-style-type: none; }
+
+#floatleft {
+  float: left;
+  text-align: right; }
+
+#floatright {
+  float: right;
+  text-align: left;
+  border-left: 1px white dashed; }
+  #floatright li {
+    margin-left: -39px; }
+
 /******************************PORTFOLIO*****************************/
 #portfolio {
   background-color: white;
@@ -393,24 +411,6 @@ nav {
 
 .span_1_of_5 {
   width: 19.5%; }
-
-.float {
-  width: 35.7%;
-  padding: 0px 7% 0px 7%; }
-
-.float li {
-  list-style-type: none; }
-
-#floatleft {
-  float: left;
-  text-align: right; }
-
-#floatright {
-  float: right;
-  text-align: left;
-  border-left: 1px white dashed; }
-  #floatright li {
-    margin-left: -39px; }
 
 /*****************************MEDIA QUERIES****************************/
 /*for changing window size*/
