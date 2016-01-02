@@ -30,8 +30,8 @@ body {
 
 #thank, #thank2 {
   font-family: "Roboto";
-  font-size: 20px;
-  line-height: 22px; }
+  font-size: 18px;
+  line-height: 20px; }
 
 #s2 {
   z-index: 90;
@@ -39,8 +39,7 @@ body {
   top: 66%;
   padding: 3% 25% 2% 25%;
   min-height: 20%;
-  background-color: #ccffff;
-  width: 60%; }
+  background-color: #ccffff; }
 
 @font-face {
   font-family: 'bob';
@@ -73,6 +72,7 @@ canvas {
     text-align: center;
     font-family: "Roboto Light";
     letter-spacing: 1px;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-top: -10px; }
 
 /*# sourceMappingURL=thankstyle.css.map */
