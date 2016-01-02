@@ -35,7 +35,7 @@ body{
   font-family: "bob";
 }
 #thank,#thank2{
-  font-family: "Roboto";
+  font-family: "Roboto-Regular";
   font-size: 18px;
   line-height: 20px;
 }
@@ -82,10 +82,22 @@ canvas {
   p{
     color:#ccffff;
     text-align: center;
-      font-family: "Roboto Light";
+      font-family: "Roboto-Light";
       letter-spacing: 1px;
       font-size: 18px;
       margin-top: -10px;
   }
 }
 
+@font-face{
+  font-family:'Roboto-Thin';
+  src: url('Roboto-Thin.ttf');
+}
+@font-face{
+  font-family:'Roboto-Light';
+  src: url('Roboto-Light.ttf');
+}
+@font-face{
+  font-family:'Roboto-Regular';
+  src: url('Roboto-Regular.ttf');
+}
