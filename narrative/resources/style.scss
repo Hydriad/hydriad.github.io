@@ -1,6 +1,7 @@
 $myaqua: #229175;
-$mylightaqua: #44d2af;
+$mydarkaqua: #006f54;
 $mylightaqua2: #49edc5;
+
 /*# sourceMappingURL=style.css.map */
 body{
   margin: 0;
@@ -112,8 +113,8 @@ h3 {
 
 /*********FOOTER***************************/
 footer{
-  padding: 10px;
-  background-color: $myaqua;
+  padding: 5px;
+  background-color: $mydarkaqua;
   p{
     text-align: center;
     color: white;
