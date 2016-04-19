@@ -1,0 +1,174 @@
+/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-size: 1rem;
+  font-family: 'Arial', 'Courier New'; }
+
+/** {
+  padding: 0 !important; 
+  margin: 0 !important; 
+
+  font-kerning: normal;
+}*/
+p {
+  font-size: 1rem; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+h1 {
+  font-family: 'Rosa';
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 80px;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: initial; }
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: initial; }
+
+/*********GENERAL***************************/
+.page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0; }
+
+/*********NAVIGATION***************************/
+/*********LANDING/HOME***************************/
+#landing {
+  background-image: url("pics/dark-forest3.jpg");
+  background-size: cover; }
+  #landing h1 {
+    padding-top: 17%;
+    padding-bottom: 40px;
+    color: white;
+    text-align: center;
+    font-size: 90px; }
+  #landing p {
+    color: white;
+    font-family: 'Dosis Book';
+    font-size: 20px;
+    padding-bottom: 40px;
+    letter-spacing: 1px; }
+  #landing a {
+    text-align: center;
+    color: #49edc5;
+    padding: 10px 15px 10px 15px;
+    border: #49edc5 3px solid;
+    border-radius: 25px;
+    font-family: 'Dosis Book';
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: all ease .5s; }
+  #landing a:hover {
+    color: white;
+    border: white 3px solid;
+    transition: all ease .5s; }
+  #landing #intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: left; }
+  #landing #introbtn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center; }
+
+/*********FOOTER***************************/
+footer {
+  padding: 10px;
+  background-color: #229175; }
+  footer p {
+    text-align: center;
+    color: white; }
+
+/*********RESPONSIVE GRID******************************/
+/*  SECTIONS  */
+.row {
+  clear: both;
+  padding: 30px;
+  margin: 0px; }
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 0 0 0 0; }
+
+.col:first-child {
+  margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */ }
+
+/*  GRID measurements, all are the right percentage 
+minus 6% or more allotted for padding  */
+.span_3_of_3 {
+  width: 100%; }
+
+.span_2_of_3 {
+  width: 60%; }
+
+.span_1_of_3 {
+  width: 27%; }
+
+.span_1_of_2 {
+  width: 40%; }
+
+.span_1_of_4 {
+  width: 19%; }
+
+.span_3_of_4 {
+  width: 69%; }
+
+.span_1_of_8 {
+  width: 10%; }
+
+/****MEDIA QUERY: GO FULL WIDTH AT LESS THAN 1024 PIXELS***********/
+@media only screen and (max-width: 1024px) {
+  .col {
+    margin: 0; }
+
+  .span_3_of_3, .span_2_of_3, .span_1_of_3, .span_1_of_2 {
+    width: 100%; }
+
+  #intro {
+    width: 90%; } }
+/****************************FONTS**************************/
+@font-face {
+  font-family: 'Rosa';
+  src: url("fonts/La_Rosa_muerta.ttf"); }
+@font-face {
+  font-family: 'Leafy';
+  src: url("fonts/Leafy Glade.ttf"); }
+@font-face {
+  font-family: 'Dosis Light';
+  src: url("fonts/Dosis-Light.ttf"); }
+@font-face {
+  font-family: 'Dosis Book';
+  src: url("fonts/Dosis-Book.ttf"); }
+
+/*# sourceMappingURL=style.css.map */
