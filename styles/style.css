@@ -259,6 +259,7 @@ p, li, a {
     margin-bottom: -3px;
     margin-right: 8px; }
   #contact a {
+    margin: 0 6px 0 6px;
     text-align: center;
     padding: 10px 20px 10px 15px;
     margin-bottom: 15px;
