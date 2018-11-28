@@ -1,0 +1,22 @@
+/*
+cool colors
+teal    #1b88c6
+maroon  #350618
+*/
+
+
+.header {
+    position: relative;
+    margin: 3rem 10rem 1rem 10rem;
+    border-bottom: solid lightgrey 1px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Megrim', cursive;
+    letter-spacing: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #350618;
+}
