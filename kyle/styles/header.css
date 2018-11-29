@@ -9,7 +9,7 @@ header .name {
     border-bottom: solid lightgrey 1px;
 }
 
-header h1 {
+header .name h1 {
     font-size: 2.2rem;
     text-align: center;
     font-family: 'Megrim', cursive;
@@ -17,12 +17,34 @@ header h1 {
     margin: 1rem auto .5rem auto;
 }
 
-header h1 a,
-header h1 a:visited {
+header .name h1 a,
+header .name h1 a:visited {
     text-decoration: none;
     color: #561930;
 }
 
+/* ----- thin header for all pages except landing/home ----- */
+header.thin {
+    display: flex;
+}
+
+header.thin .name {
+    margin: 0;
+    border: none;
+}
+
+header.thin h1 {
+    text-align: left;
+    margin: .5rem 1rem;
+    font-size: 1.7rem;
+    letter-spacing: 1rem;
+}
+
+header.thin nav ul {
+    margin-top: 1rem;
+}
+
+/* ----- navigation ----- */
 nav {
     text-align: center;
 }
@@ -53,10 +75,25 @@ nav ul li a:hover {
 
 /*--------------------- MEDIA QUERIES ---------------------*/
 /* for changing window size */
-/*  GO FULL WIDTH AT LESS THAN 1024 PIXELS */
+/*  GO FULL WIDTH AT LESS THAN 720 PIXELS */
 
-@media only screen and (max-width: 720px) {
-    header .name {
+@media only screen and (max-width: 800px) {
+    header .name,
+    header.thin .name {
         margin: 0.5rem;
+        border-bottom: solid lightgrey 1px;
+    }
+    header .name h1,
+    header.thin .name h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: 1rem;
+        margin: .5rem 1rem;
+    }
+    header.thin {
+        display: block;
+    }
+    nav ul li {
+         padding: 0 .5rem;
     }
 }
