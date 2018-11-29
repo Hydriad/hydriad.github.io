@@ -4,10 +4,9 @@ teal    #1b88c6
 maroon  #350618
 */
 
-
-.header {
+header {
     position: relative;
-    margin: 3rem 10rem 1rem 10rem;
+    margin: 2rem 10rem 1rem 10rem;
     border-bottom: solid lightgrey 1px;
 }
 
@@ -18,5 +17,18 @@ h1 {
     letter-spacing: 1.5rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
     color: #350618;
+}
+
+
+/*--------------------- MEDIA QUERIES ---------------------*/
+/* for changing window size */
+/*  GO FULL WIDTH AT LESS THAN 1024 PIXELS */
+
+@media only screen and (max-width: 1024px) {
+    header {
+        margin: 0.5rem;
+    }
+
 }

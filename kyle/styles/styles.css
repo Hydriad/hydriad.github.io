@@ -1,8 +1,62 @@
+/*
+cool colors
+teal    #1b88c6
+maroon  #350618
+*/
+
 body {
     margin: 0;
     background-color: #f4f4f4;
 }
 
-.wrapper {
-    padding-top: 10rem;
+.content {
+    width: 75%;
+    margin: auto;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#gallery ul li {
+    width: 33.3%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#gallery img {
+    width: 55%;
+}
+
+
+
+
+
+
+/*--------------------- MEDIA QUERIES ---------------------*/
+/* for changing window size */
+/*  GO FULL WIDTH AT LESS THAN 1024 PIXELS */
+
+@media only screen and (max-width: 1024px) {
+    .content {
+        width: 98%;
+    }
+    #gallery ul li {
+        width: 33.3%;
+        padding-bottom: .5rem;
+    }
+
+    #gallery img {
+        width: 100%;
+    }
+
 }
