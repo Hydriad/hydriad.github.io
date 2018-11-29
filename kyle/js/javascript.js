@@ -39,7 +39,7 @@
                 user_id: settings.user_id,
                 photoset_id: '72157704053325964',
                 format: 'json',
-                extras: 'url_q,url_m,url_z,date_taken,tags'
+                extras: 'url_q,url_m,url_z,date_taken,tags' // photo size options https://www.flickr.com/services/api/misc.urls.html
             }).success(function(state) {
                 var list = gallery.find('ul:first');
                 list.html('');

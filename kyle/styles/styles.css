@@ -7,11 +7,23 @@ maroon  #561930
 body {
     margin: 0;
     background-color: #f4f4f4;
+    /* all for stretching page to full height and putting footer on bottom: */
+    /* DOCS https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .content {
     width: 70%;
     margin: auto;
+    flex-grow: 1; /* for keeping footer on bottom */
+}
+
+/* prevents flex items from getting smaller when content is larger than screen */
+.no-shrink {
+    flex-shrink: 0;
 }
 
 #gallery {
