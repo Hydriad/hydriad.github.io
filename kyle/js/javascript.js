@@ -31,7 +31,7 @@
 
             var gallery = $(this);
             gallery.addClass('flickr-gallery');
-            gallery.append('<h2></h2><h3></h3><div class="viewport"></div><div class="browser"><ul></ul></div><div class="clear"></div>');
+            gallery.append('<div class="viewport"></div><div class="browser"><ul></ul></div><div class="clear"></div>');
 
             $.getJSON(url, {
                 method: 'flickr.photosets.getPhotos', // DOCS https://www.flickr.com/services/api/flickr.photosets.getPhotos.html
@@ -39,13 +39,13 @@
                 user_id: settings.user_id,
                 photoset_id: '72157704053325964',
                 format: 'json',
-                extras: 'url_q,url_m,date_taken,tags'
+                extras: 'url_q,url_m,url_z,date_taken,tags'
             }).success(function(state) {
                 var list = gallery.find('ul:first');
                 list.html('');
 
                 $.each(state.photoset.photo, function(index){
-                    list.append('<li><img src="' + this.url_q + '" ' +
+                    list.append('<li><img src="' + this.url_z + '" ' +
                         'data-title="' + this.title + '" ' +
                         'alt="photo-' + index + '"' +
                         '/></li>');

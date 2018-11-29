@@ -10,7 +10,7 @@ body {
 }
 
 .content {
-    width: 75%;
+    width: 70%;
     margin: auto;
 }
 
@@ -24,39 +24,30 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 #gallery ul li {
-    width: 33.3%;
+    width: 33.33%;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 #gallery img {
-    width: 55%;
+    width: calc(100% - 1rem);
+    padding: 0 .5rem;
 }
-
-
-
-
 
 
 /*--------------------- MEDIA QUERIES ---------------------*/
 /* for changing window size */
 /*  GO FULL WIDTH AT LESS THAN 1024 PIXELS */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 720px) {
     .content {
         width: 98%;
     }
     #gallery ul li {
-        width: 33.3%;
+        width: 100%;
         padding-bottom: .5rem;
     }
-
-    #gallery img {
-        width: 100%;
-    }
-
 }

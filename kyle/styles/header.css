@@ -4,31 +4,40 @@ teal    #1b88c6
 maroon  #350618
 */
 
-header {
-    position: relative;
-    margin: 2rem 10rem 1rem 10rem;
+header .name {
+    margin: 2rem 10rem 0 10rem;
     border-bottom: solid lightgrey 1px;
 }
 
-h1 {
+header h1 {
     font-size: 3rem;
     text-align: center;
     font-family: 'Megrim', cursive;
     letter-spacing: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
+    margin: 1rem auto 1rem auto;
     color: #350618;
 }
 
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 0 1rem;
+    display: inline;
+}
 
 /*--------------------- MEDIA QUERIES ---------------------*/
 /* for changing window size */
 /*  GO FULL WIDTH AT LESS THAN 1024 PIXELS */
 
-@media only screen and (max-width: 1024px) {
-    header {
+@media only screen and (max-width: 720px) {
+    header .name {
         margin: 0.5rem;
     }
-
 }
