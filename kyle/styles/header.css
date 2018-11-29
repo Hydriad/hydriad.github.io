@@ -1,7 +1,7 @@
 /*
 cool colors
 teal    #1b88c6
-maroon  #350618
+maroon  #561930
 */
 
 header .name {
@@ -15,7 +15,7 @@ header h1 {
     font-family: 'Megrim', cursive;
     letter-spacing: 1.5rem;
     margin: 1rem auto 1rem auto;
-    color: #350618;
+    color: #561930;
 }
 
 nav {
@@ -28,8 +28,21 @@ nav ul {
 }
 
 nav ul li {
-    padding: 0 1rem;
+    padding: 0 2rem;
     display: inline;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+nav ul li a {
+    color: #350618;
+    transition:color .3s linear;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #1b88c6;
+    transition:color .3s linear;
 }
 
 /*--------------------- MEDIA QUERIES ---------------------*/

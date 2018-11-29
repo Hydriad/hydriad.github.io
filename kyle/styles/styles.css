@@ -1,7 +1,7 @@
 /*
 cool colors
 teal    #1b88c6
-maroon  #350618
+maroon  #561930
 */
 
 body {
@@ -37,6 +37,21 @@ body {
     padding: 0 .5rem;
 }
 
+footer {
+    width: calc(100% - 2rem);
+    background-color: lightgrey;
+    padding: .3rem 1rem;
+    color: #561930;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+footer p {
+    margin: .5rem 0;
+}
+
+footer .copyright {
+    font-size: 1.5rem;
+}
 
 /*--------------------- MEDIA QUERIES ---------------------*/
 /* for changing window size */
