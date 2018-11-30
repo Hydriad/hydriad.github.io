@@ -10,6 +10,12 @@
             per_page: 100
         }, options);
 
+        function minimizePhoto() {
+            $('body').find($('.overlayPhoto')).fadeOut({
+                opacity: 0
+            },200); // duration of fade-in animation in ms
+        }
+
         function enlargePhoto(event) {
             var target = $(event.target);
 
@@ -30,10 +36,10 @@
                 $('body').append(overlayPhoto);
                 $('.photo').animate({
                     opacity: 1
-                },400); // duration of fade-in animation in ms
+                },300); // duration of fade-in animation in ms
 
                 var overlay = $('.overlayPhoto').find('.overlay');
-                overlay.on('click', enlargePhoto);
+                overlay.on('click', minimizePhoto);
             }
         }
 
