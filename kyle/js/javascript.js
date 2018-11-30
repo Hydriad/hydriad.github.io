@@ -1,6 +1,6 @@
 (function( $ ) {
     $.fn.flickr = function(options) {
-        var url = 'http://api.flickr.com/services/rest/?jsoncallback=?';
+        var url = 'https://api.flickr.com/services/rest/?jsoncallback=?';
 
         var settings = $.extend( {
             api_key: 'aeda2b39f3ef21354552421c8a04241c', // TODO KYLE replace this with your own api key
