@@ -45,7 +45,6 @@
                 list.html('');
 
                 $.each(state.photoset.photo, function(index){
-                    alert('yo');
                     list.append('<li><img src="' + this.url_z + '" ' +
                         'data-title="' + this.title + '" ' +
                         'alt="photo-' + index + '"' +
