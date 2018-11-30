@@ -45,6 +45,7 @@
                 list.html('');
 
                 $.each(state.photoset.photo, function(index){
+                    alert('yo');
                     list.append('<li><img src="' + this.url_z + '" ' +
                         'data-title="' + this.title + '" ' +
                         'alt="photo-' + index + '"' +
@@ -52,7 +53,7 @@
                 });
 
             }).fail(function(state) {
-                alert("Unable to retrieve photos. Ya done messed up the API request.");
+                alert("Unable to retrieve photos.");
             });
     });
 
