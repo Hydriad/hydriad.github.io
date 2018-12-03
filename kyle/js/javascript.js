@@ -7,11 +7,15 @@ function setOverlayPhotoSrc(src) {
     document.getElementById('enlargedPhoto').src = src;
 }
 
-function minimizePhoto() {
-    $('body').find($('#overlay-photo')).fadeOut(200);
-
+// function to reset the selected overlay photo and its info to empty.
+// Without this, we would get a flash of an empty img tag on fadeOut of the selectedPhoto.
+function clearVals() {
     state.selectedPhotoIndex = null;
     setOverlayPhotoSrc('');
+}
+
+function minimizePhoto() {
+    $('body').find($('#overlay-photo')).fadeOut(200, clearVals)
 }
 
 function navigateLeft() {
