@@ -50,30 +50,6 @@ body {
     padding: 0 .5rem;
 }
 
-/* ----- overlay photo ----- */
-.overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.6;
-    top: 0;
-    left: 0;
-}
-.photo {
-    opacity: 0;
-    position: fixed;
-    margin-left: calc(50% - 25% - .5rem);
-    margin-top: 14vh;
-    left: 0;
-    top: 0;
-}
-.photo img {
-    background-color: white;
-    padding: .5rem;
-    width: 50vw; /*just to give a viewable size */
-}
-
 footer {
     width: calc(100% - 2rem);
     background-color: lightgrey;
@@ -92,7 +68,7 @@ footer .copyright {
 
 /*--------------------- MEDIA QUERIES ---------------------*/
 /* for changing window size */
-/*  GO FULL WIDTH AT LESS THAN 720 PIXELS */
+/*  GO FULL WIDTH AT LESS THAN 800 PIXELS */
 
 @media only screen and (max-width: 800px) {
     .content {
