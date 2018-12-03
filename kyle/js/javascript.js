@@ -3,26 +3,29 @@ var state = {
     selectedPhotoIndex: null
 };
 
-function minimizePhoto() {
-    $('body').find($('.overlayPhoto')).fadeOut({
-        opacity: 0
-    },200); // duration of fade-in animation in ms
-
-    state.selectedPhotoIndex = null;
+function setOverlayPhotoSrc(src) {
+    document.getElementById('enlargedPhoto').src = src;
 }
 
-function navigateLeft(event) {
+function minimizePhoto() {
+    $('body').find($('#overlay-photo')).fadeOut(200);
+
+    state.selectedPhotoIndex = null;
+    setOverlayPhotoSrc('');
+}
+
+function navigateLeft() {
     // if user clicks left arrow from first item in list, navigate to last photo
     var index = state.selectedPhotoIndex - 1 === -1 ? state.photos.length - 1 : state.selectedPhotoIndex - 1;
     state.selectedPhotoIndex = index;
-    document.getElementById("enlargedPhoto").src = state.photos[index].url_o;
+    setOverlayPhotoSrc(state.photos[index].url_o);
 }
 
-function navigateRight(event) {
+function navigateRight() {
     // if user clicks left arrow from first item in list, navigate to last photo
     var index = state.selectedPhotoIndex + 1 === state.photos.length ? 0 : state.selectedPhotoIndex + 1;
     state.selectedPhotoIndex = index;
-    document.getElementById("enlargedPhoto").src = state.photos[index].url_o;
+    setOverlayPhotoSrc(state.photos[index].url_o);
 }
 
 function enlargePhoto(event) {
@@ -36,28 +39,9 @@ function enlargePhoto(event) {
             state.selectedPhotoIndex = index;
         }
 
-        var url = state.photos[state.selectedPhotoIndex].url_o;
+        setOverlayPhotoSrc(state.photos[index].url_o);
 
-        // build an overlay and a photo to go on top of it, with left and right arrows to navigate
-        var overlayPhoto =
-            '<div class="overlayPhoto">' +
-            '<div class="overlay-background" onclick="minimizePhoto()"></div>' +
-            '<div class="photo">' +
-            '<img id="enlargedPhoto" src="' + url + '" alt="photo" />' +
-            '</div>' +
-            '<div class="arrow-box left" id="left-arrow" onclick="navigateLeft()">' +
-            '<img src="./styles/pics/chevron-left-wht.png" class="arrow" alt="left-arrow" />' +
-            '</div>' +
-            '<div class="arrow-box right" id="right-arrow" onclick="navigateRight()">' +
-            '<img src="./styles/pics/chevron-right-wht.png" class="arrow" alt="right-arrow" />' +
-            '</div>' +
-            '</div>';
-
-        // DOCS https://stackoverflow.com/questions/12454858/display-larger-version-of-image-when-image-clicked
-        $('body').append(overlayPhoto);
-        $('.photo').animate({
-            opacity: 1
-        }, 400); // duration of fade-in animation in ms
+        $('body').find($('#overlay-photo')).fadeIn(400);
     }
 }
 
@@ -104,7 +88,7 @@ function enlargePhoto(event) {
                 });
 
                 list.on('click', enlargePhoto);
-                
+
             }).fail(function(state) {
                 alert("Unable to retrieve photos.");
             });

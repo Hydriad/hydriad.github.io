@@ -28,6 +28,18 @@
         </header>
         <section class="content no-shrink">
             <div id="gallery"></div>
+            <div id="overlay-photo">
+                <div class="overlay-background" onclick="minimizePhoto()"></div>
+                <div class="photo">
+                    <img id="enlargedPhoto" src="" alt="photo" />
+                    </div>
+                <div class="arrow-box left" id="left-arrow" onclick="navigateLeft()">
+                    <img src="./styles/pics/chevron-left-wht.png" class="arrow" alt="left-arrow" />
+                    </div>
+                <div class="arrow-box right" id="right-arrow" onclick="navigateRight()">
+                    <img src="./styles/pics/chevron-right-wht.png" class="arrow" alt="right-arrow" />
+                </div>
+            </div>
         </section>
         <footer class="no-shrink">
             <p><span class="copyright">©</span> Kyle Donahue 2018. All rights reserved.</p>

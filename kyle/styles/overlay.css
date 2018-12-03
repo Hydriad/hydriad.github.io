@@ -7,14 +7,19 @@
     top: 0;
     left: 0;
 }
+
+#overlay-photo {
+    display: none;
+}
+
 .photo {
-    opacity: 0;
     position: fixed;
     margin-left: calc(50% - 25% - .5rem);
     margin-top: 14vh;
     left: 0;
     top: 0;
 }
+
 .photo img {
     background-color: white;
     padding: .5rem;
