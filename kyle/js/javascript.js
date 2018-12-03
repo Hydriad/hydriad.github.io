@@ -57,7 +57,6 @@ function enlargePhoto(event) {
             per_page: 100
         }, options);
 
-
         return this.each(function() {
 
             var gallery = $(this);
@@ -96,6 +95,15 @@ function enlargePhoto(event) {
 
     };
 })( jQuery );
+
+// if user hits ESC while viewing enlarged photo, minimize it
+$(document).keyup(function(e) {
+    if (e.keyCode === 27) {
+        if (document.getElementById('overlay-photo').style.display === 'block') {
+            minimizePhoto()
+        }
+    }
+});
 
 $(document).on('ready', function(){
     $('div#gallery').flickr({ photoset_id: '72157626766436507'});
