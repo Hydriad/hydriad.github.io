@@ -1,0 +1,14 @@
+.contact header {
+    background-image: url("./pics/background-jasper.jpg");
+    background-position: 0 58%;
+}
+
+.inspiration header {
+    background-image: url("./pics/background-tronador.jpg");
+    background-position: 0 62%;
+}
+
+.career header {
+    background-image: url("./pics/background-patagonia2.jpg");
+    background-position: 0 53%;
+}

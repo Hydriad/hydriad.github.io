@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background-color: lightgrey;
+    /* all for stretching page to full height and putting footer on bottom: */
+    /* DOCS https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+nav {
+	background-color: lightgrey;
+	padding: .25rem;
+    width: calc(100% - .5rem);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: darkgreen;
+}
+nav ul li a:hover {
+    color: green;
+}
+
+header {
+	background-color: grey;
+    background-image: url("./pics/background-patagonia.jpg");
+    background-position: 0 29%;
+    background-size: cover;
+    padding: 1.5rem 0;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+header h1 {
+	color: white;
+    font-size: 5vw; /* width of the font is proportional to width of the page */
+    font-family: 'Laila', 'Arial';
+    letter-spacing: -0.15rem;
+    font-weight: normal;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.3), 0 6px 6px rgba(0,0,0,0.3);
+}
+
+.content {
+    width: 60%;
+    flex-grow: 1; /* for keeping footer on bottom */
+    margin: .5rem auto .5rem auto;
+}
+
+.content.background-image{
+    flex-grow: 1; /* for keeping footer on bottom */
+    background-image: url("pics/background-patagonia.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	margin: 0;
+    background-position: bottom;
+    width: 100%;
+}
+
+#gallery .small-photo img {
+	width: 10rem;
+}
+
+
+/* prevents flex items from getting smaller when content is larger than screen */
+.no-shrink {
+    flex-shrink: 0;
+}
+
+footer {
+    width: calc(100% - 2rem);
+    background-color: #6a6a74;
+    color: black;
+    padding: .3rem 1rem 0 1rem;
+}
+
+footer p {
+    margin: .2rem 0 .5rem 0;
+}
+
+footer .copyright {
+    font-size: 1rem;
+}
