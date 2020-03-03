@@ -1,3 +1,9 @@
 .about header {
     background-image: url("./pics/background-patagonia.jpg");
+    background-position: 0 50%;
+}
+
+.about header p,
+.about {
+	background-color: #c5c7bc;
 }

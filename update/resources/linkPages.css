@@ -10,5 +10,10 @@
 
 .career header {
     background-image: url("./pics/background-patagonia2.jpg");
-    background-position: 0 53%;
+    background-position: 0 37%;
+}
+
+.career header p,
+.career {
+	background-color: #f7e1af;
 }
