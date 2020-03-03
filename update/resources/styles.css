@@ -11,8 +11,8 @@ body {
 
 nav {
 	background-color: lightgrey;
-	padding: .25rem;
-    width: calc(100% - .5rem);
+    padding: .15rem;
+    width: calc(100% - .3rem);
 }
 
 nav ul {
@@ -34,27 +34,27 @@ nav ul li a:hover {
 }
 
 header {
-    background-image: url("./pics/background-patagonia.jpg");
-    background-position: 0 29%;
-    background-size: cover;
-    padding: 2rem 0;
-    flex-shrink: 0;
     text-align: center;
+    padding: 2rem 0;
 }
 
-header h1 {
+.home .content-full-width,
+header {
+    background-size: cover;
+    flex-shrink: 0;
+}
+
+h1 {
 	color: white;
-    font-size: 5vw; /* width of the font is proportional to width of the page */
-    font-family: 'Laila', 'Arial';
-    letter-spacing: -0.15rem;
+    font-size: 6vw; /* width of the font is proportional to width of the page */
+    font-family: 'Seaweed Script', 'Arial';
     font-weight: normal;
     text-align: center;
     margin: 1rem auto 0 auto;
-    text-shadow: 0 5px 10px rgba(0,0,0,0.3), 0 6px 6px rgba(0,0,0,0.3);
+    text-shadow: 0 5px 10px rgba(0,0,0,0.3), 0 6px 6px rgba(0,0,0,0.8);
 }
 
 header p {
-    background-color: white;
     padding: .5rem;
     color: black;
     width: calc(60% + 1rem);
@@ -95,13 +95,14 @@ header p {
 }
 
 footer {
-    width: calc(100% - 2rem);
+    width: calc(100% - 1rem);
     color: black;
     background-color: transparent;
     padding: 0 .5rem;
-    font-size: .8rem;
+    font-size: .9rem;
+    text-align: center;
 }
 
 footer p {
-    margin: .2rem 0 .5rem 0;
+    margin: .5rem 0 .25rem 0;
 }

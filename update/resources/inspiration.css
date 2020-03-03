@@ -1,0 +1,29 @@
+.inspiration header {
+    background-image: url("./pics/background-tronador.jpg");
+    background-position: 0 65%;
+}
+
+.inspiration,
+.inspiration nav,
+.inspiration header p {
+	background-color: #b4c3d5;
+}
+
+.inspiration ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.inspiration ul li a {
+	color: #043aaf;
+}
+
+.inspiration ul li .title {
+	margin-bottom: .25rem;
+}
+
+.inspiration ul li .desc {
+	margin-top: .25rem;
+	margin-bottom: 1.5rem;
+}

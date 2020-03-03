@@ -1,9 +1,11 @@
 .about header {
-    background-image: url("./pics/background-patagonia.jpg");
-    background-position: 0 50%;
+    background-image: url("./pics/background-patagonia3.jpg");
+    background-position: 0 60%;
 }
 
-.about header p,
-.about {
-	background-color: #c5c7bc;
+.about,
+.about nav,
+.about header p {
+	background-color: #ced3b4;
+	/*bdcab9*/
 }

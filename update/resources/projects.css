@@ -1,4 +1,11 @@
 .projects header {
-    background-image: url("./pics/background-patagonia3.jpg");
-    background-position: 0 40%;
+    background-image: url("./pics/background-patagonia.jpg");
+    background-position: 0 50%;
+}
+
+.projects,
+.projects nav,
+.projects header p {
+	background-color: #c5c7bc;
+	/*bdcab9*/
 }
