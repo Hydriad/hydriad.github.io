@@ -19,8 +19,15 @@
 	color: #043aaf;
 }
 
+.inspiration ul li a:hover {
+	color: #467aed;
+}
+
 .inspiration ul li .title {
 	margin-bottom: .25rem;
+	font-family: 'Seaweed Script', 'Times New Roman';
+	font-size: 1.4rem;
+	font-weight: bold;
 }
 
 .inspiration ul li .desc {

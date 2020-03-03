@@ -84,10 +84,6 @@ header p {
     width: 100%;
 }
 
-#gallery .small-photo img {
-	width: 10rem;
-}
-
 
 /* prevents flex items from getting smaller when content is larger than screen */
 .no-shrink {

@@ -1,8 +1,19 @@
 .travel header {
 	padding: 0;
-
+	background-image: url("./pics/background-annecy3.jpg");
+    background-position: 0 40%;
 }
 
 .travel h1 {
-	font-size: 3vw;
+	font-size: 4vw;
+	margin-top: .5rem;
+}
+
+.travel a {
+	color: #5a086d;
+}
+
+.travel,
+.travel nav {
+	background-color: #e5c6ec;
 }

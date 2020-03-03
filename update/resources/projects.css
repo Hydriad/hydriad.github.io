@@ -9,3 +9,114 @@
 	background-color: #c5c7bc;
 	/*bdcab9*/
 }
+
+.projects .wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.projects .fixed-left-nav {
+	width: 9rem;
+	min-width: 9rem;
+	background-color: white;
+	padding: 1rem;
+}
+
+.projects .fixed-left-nav ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.projects .fixed-left-nav ul li {
+    margin-bottom: 1.5rem;
+}
+
+.projects .fixed-left-nav ul li a {
+    text-decoration: none;
+    color: darkgreen;
+}
+.projects .fixed-left-nav ul li a:hover {
+    color: green;
+}
+
+.projects .right-categories {
+	padding: 1rem;
+}
+
+.projects h2 {
+	margin: 0;
+	font-family: 'Seaweed Script', 'Arial';
+	font-size: 2.5rem;
+}
+
+.projects h3 {
+	margin: 0;
+	font-family: 'Arial';
+	font-size: 1.1rem;
+}
+
+.projects .category {
+	margin-bottom: 1rem;
+}
+
+.projects .category p {
+	margin-top: 0;
+}
+
+.projects .videos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.projects .videos .video {
+	margin: 0 .25rem 1rem .25rem;
+	width: calc(50% - 2rem);
+}
+
+.projects .gallery-horizontal ul {
+	padding: 0;
+}
+
+.projects .gallery-horizontal ul img {
+    width: 32%;
+    padding-right: .25rem;
+}
+
+.projects .gallery-horizontal ul li {
+	display: inline;
+}
+
+
+
+/* DOCS https://css-tricks.com/seamless-responsive-photo-grid/ */
+.gallery-vertical ul img {
+    width: 100%;
+    padding: 0 0 .25rem 0;
+}
+
+.projects .gallery-vertical ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    column-count: 3;
+    line-height: 0;
+    column-gap: .25rem;
+}
+
+.projects .gallery-vertical ul li {
+	text-align: center;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/*.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}*/
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/*.sticky + .content {
+  padding-top: 60px;
+}*/

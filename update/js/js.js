@@ -80,29 +80,63 @@ function navigateRight() {
 })( jQuery );
 
 function loadFriendshipBraceletImages() {
-     $('div#gallery').loadFlickrPhotos({ 
+     $('div#gallery-bracelets').loadFlickrPhotos({ 
             photoset_id: '72157713029394207',
-            classes: 'small-photo'
+            classes: ''
         });
 }
 
 function loadMural1Images() {
-     $('div#gallery').loadFlickrPhotos({ 
+     $('div#gallery-mural1').loadFlickrPhotos({ 
             photoset_id: '72157713038981951',
-            classes: 'small-photo'
+            classes: ''
         });
 }
 
 function loadMural2Images() {
-     $('div#gallery').loadFlickrPhotos({ 
+     $('div#gallery-mural2').loadFlickrPhotos({ 
             photoset_id: '72157713030791308',
-            classes: 'small-photod'
+            classes: ''
         });
 }
 
 function loadDigitalArtImages() {
-     $('div#gallery').loadFlickrPhotos({ 
+     $('div#gallery-photo-edits').loadFlickrPhotos({ 
             photoset_id: '72157713029383051',
             classes: 'small-photo'
         });
 }
+
+function loadProjectImages() {
+    loadFriendshipBraceletImages();
+    loadMural1Images();
+    loadMural2Images();
+
+}
+
+function setMapSize() {
+    const map = document.getElementById('google-map');
+    // subtract 4 becuase the idrame comes with a 2px border
+    map.style.width = (window.innerWidth - 4) + 'px';
+    // subtract to prevent vertical scrollbar
+    map.style.height = (window.innerHeight - 140) + 'px';
+}
+
+
+// // When the user scrolls the page, execute myFunction
+// window.onscroll = function() {myFunction()};
+
+// // Get the navbar
+// var navbar = document.getElementById("navbar");
+
+// // Get the offset position of the navbar
+// var sticky = navbar.offsetTop;
+
+// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }

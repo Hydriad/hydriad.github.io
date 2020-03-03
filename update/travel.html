@@ -9,7 +9,7 @@
         <link type="text/css" rel="stylesheet" href="resources/travel.css">
         <link href="https://fonts.googleapis.com/css?family=Seaweed+Script|Laila:700&display=swap" rel="stylesheet">
 	</head>
-    <body class="travel">
+    <body class="travel" onload="setMapSize()">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,7 +25,7 @@
             <h1>Places I've been</h1>
         </header>
         <section class="content-full-width no-shrink">
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sZ3MHUmEYkVSxIWGfOa06bWkjGD1qeuS" width="1200" height="430"></iframe>
+            <iframe id="google-map" src="https://www.google.com/maps/d/u/0/embed?mid=1sZ3MHUmEYkVSxIWGfOa06bWkjGD1qeuS" width="1200" height="800"></iframe>
         </section>
         <footer class="no-shrink">
             <p><span class="copyright">©</span> Hayley Schluter 2020. All rights reserved.</p>
