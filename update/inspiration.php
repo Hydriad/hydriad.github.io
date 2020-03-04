@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hayley Schluter</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="js/js.js"></script>
-        <link type="text/css" rel="stylesheet" href="resources/styles.css">
+        <?php require 'defaultImports.php';?>
         <link type="text/css" rel="stylesheet" href="resources/inspiration.css">
-        <link href="https://fonts.googleapis.com/css?family=Seaweed+Script|Laila:700&display=swap" rel="stylesheet">
 	</head>
     <body class="inspiration">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="inspiration.html">Inspiration</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="travel.html">Travel</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <?php require 'navigation.php';?>
         <header>
             <h1>Things that inspire me</h1>
             <p>A bunch of links to things that I find meaningful.</p>
@@ -84,8 +69,6 @@
                 </li>
             </ul>
         </section>
-        <footer class="no-shrink">
-            <p><span class="copyright">©</span> Hayley Schluter 2020. All rights reserved.</p>
-        </footer>
+        <?php require 'footer.php';?>
     </body>
 </html>

@@ -100,7 +100,7 @@
 	list-style-type: none;
     margin: 0;
     padding: 0;
-    column-count: 3;
+    column-count: 4;
     line-height: 0;
     column-gap: .25rem;
 }

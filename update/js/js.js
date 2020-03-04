@@ -111,7 +111,7 @@ function loadProjectImages() {
     loadFriendshipBraceletImages();
     loadMural1Images();
     loadMural2Images();
-
+    loadDigitalArtImages();
 }
 
 function setMapSize() {

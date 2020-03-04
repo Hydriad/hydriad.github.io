@@ -1,27 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hayley Schluter</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?php require 'defaultImports.php';?>
         <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
-        <script type="text/javascript" src="js/js.js"></script>
-        <link type="text/css" rel="stylesheet" href="resources/styles.css">
         <link type="text/css" rel="stylesheet" href="resources/projects.css">
-        <link href="https://fonts.googleapis.com/css?family=Seaweed+Script|Laila:700&display=swap" rel="stylesheet">
 	</head>
     <body onload="loadProjectImages()" class="projects">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="inspiration.html">Inspiration</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="travel.html">Travel</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <?php require 'navigation.php';?>
         <header>
             <h1>Art & Projects</h1>
             <p>I've dabbled in a lot of artistic pursuits, but have lately found joy in making...</p>
@@ -62,7 +47,7 @@
                         </div>
                         <div class="video">
                             <h3>otakustats.moe (2019)</h3>
-                            <p>An project to bring better searching and statistics to fellow anime lovers.</p>
+                            <p>A website to bring better searching and statistics to fellow anime lovers.</p>
                             <iframe width="450" height="315" src="https://www.youtube.com/embed/zbmO4_WXTyw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="video">
@@ -89,6 +74,7 @@
                     <p class="desc">
                         There is so much freedom and room for experimetation in digital art. I edit photos of myself most often because there are no expectations.
                     </p>
+                    <div class="gallery-vertical" id="gallery-photo-edits"></div>
                 </div>
                 <div class="category" id="whiteboard">
                     <h2>Whiteboard doodles</h2>
@@ -98,8 +84,6 @@
                 </div>
             </seciton>
         </section>
-        <footer class="no-shrink">
-            <p><span class="copyright">©</span> Hayley Schluter 2020. All rights reserved.</p>
-        </footer>
+        <?php require 'footer.php';?>
     </body>
 </html>
