@@ -56,10 +56,6 @@
 	font-size: 1.1rem;
 }
 
-.projects .category {
-	margin-bottom: 1rem;
-}
-
 .projects .category p {
 	margin-top: 0;
 }
@@ -88,8 +84,6 @@
 	display: inline;
 }
 
-
-
 /* DOCS https://css-tricks.com/seamless-responsive-photo-grid/ */
 .gallery-vertical ul img {
     width: 100%;
@@ -107,6 +101,13 @@
 
 .projects .gallery-vertical ul li {
 	text-align: center;
+}
+
+/* when the projects page loads, only display the friendship bracelets category. */
+.projects #murals,
+.projects #hackathon,
+.projects #digital-art {
+	display: none;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */

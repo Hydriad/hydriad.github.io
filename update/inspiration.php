@@ -17,7 +17,8 @@
                         The Creative Independent
                     </a>
                     <p class="desc">
-                        An online publication that interviews creators about their work, creative process, and lives. A recent favorite of mine is <a href="https://thecreativeindependent.com/people/drag-queen-and-intuitive-reader-kiki-slugqueen-on-listening-as-performance/" target="_blank">
+                        An online publication that interviews creators about their work, creative process, and lives. A recent favorite of mine is 
+                        <a href="https://thecreativeindependent.com/people/drag-queen-and-intuitive-reader-kiki-slugqueen-on-listening-as-performance/" target="_blank">
                             Kiki Slugqueen on listening as a performance
                         </a>.
                     </p>

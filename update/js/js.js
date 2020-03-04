@@ -1,29 +1,3 @@
-var state = {
-    photos: [],
-    selectedPhotoIndex: null
-};
-
-// function to reset the selected overlay photo and its info to empty.
-// Without this, we would get a flash of an empty img tag on fadeOut of the selectedPhoto.
-function clearVals() {
-    state.selectedPhotoIndex = null;
-    setOverlayPhotoSrc('');
-}
-
-function navigateLeft() {
-    // if user clicks left arrow from first item in list, navigate to last photo
-    var index = state.selectedPhotoIndex - 1 === -1 ? state.photos.length - 1 : state.selectedPhotoIndex - 1;
-    state.selectedPhotoIndex = index;
-    setOverlayPhotoSrc(state.photos[index].url_o);
-}
-
-function navigateRight() {
-    // if user clicks left arrow from first item in list, navigate to last photo
-    var index = state.selectedPhotoIndex + 1 === state.photos.length ? 0 : state.selectedPhotoIndex + 1;
-    state.selectedPhotoIndex = index;
-    setOverlayPhotoSrc(state.photos[index].url_o);
-}
-
 // DOCS for the meat of this: http://www.developerdrive.com/2013/05/creating-a-jquery-gallery-for-flickr/
 (function( $ ) {
     $.fn.loadFlickrPhotos = function(options) {
@@ -58,9 +32,6 @@ function navigateRight() {
                 var list = gallery.find('ul:first');
                 list.html('');
 
-                // set results to local state var
-                state.photos = response.photoset.photo;
-
                 $.each(response.photoset.photo, function(index){
                     list.append(
                         '<li>' +
@@ -79,41 +50,59 @@ function navigateRight() {
     };
 })( jQuery );
 
-function loadFriendshipBraceletImages() {
-     $('div#gallery-bracelets').loadFlickrPhotos({ 
-            photoset_id: '72157713029394207',
-            classes: ''
-        });
+loadBraceletImages = () => {
+    $('div#gallery-bracelets').loadFlickrPhotos({ 
+        photoset_id: '72157713029394207',
+        classes: ''
+    });
 }
 
-function loadMural1Images() {
-     $('div#gallery-mural1').loadFlickrPhotos({ 
-            photoset_id: '72157713038981951',
-            classes: ''
-        });
+loadMural1Images = () => {
+    $('div#gallery-mural1').loadFlickrPhotos({ 
+        photoset_id: '72157713038981951',
+        classes: ''
+    });
 }
 
-function loadMural2Images() {
-     $('div#gallery-mural2').loadFlickrPhotos({ 
-            photoset_id: '72157713030791308',
-            classes: ''
-        });
+loadMural2Images = () => {
+    $('div#gallery-mural2').loadFlickrPhotos({ 
+        photoset_id: '72157713030791308',
+        classes: ''
+    });
 }
 
-function loadDigitalArtImages() {
-     $('div#gallery-photo-edits').loadFlickrPhotos({ 
-            photoset_id: '72157713029383051',
-            classes: 'small-photo'
-        });
+loadDigitalArtImages = () => {
+    $('div#gallery-digital-art').loadFlickrPhotos({ 
+        photoset_id: '72157713029383051',
+        classes: ''
+    });
 }
 
-function loadProjectImages() {
-    loadFriendshipBraceletImages();
+loadMuralImages = () => {
     loadMural1Images();
     loadMural2Images();
-    loadDigitalArtImages();
 }
 
+// on the projects page, show or hide content based on which category has been selected
+// ref: https://stackoverflow.com/questions/23340995/toggle-hidden-divs-by-clicking-on-navigation
+switchCategory = (id) => {
+    $('.category').hide();
+    $(('#' + id)).show();
+
+    switch(id) {
+        case 'bracelets': 
+            loadBraceletImages();
+            break;
+        case 'murals': 
+            loadMuralImages();
+            break;
+        case 'digital-art': 
+            loadDigitalArtImages();
+            break;
+    }
+}
+
+// on the travel page, set the width and height of the map
 function setMapSize() {
     const map = document.getElementById('google-map');
     // subtract 4 becuase the idrame comes with a 2px border

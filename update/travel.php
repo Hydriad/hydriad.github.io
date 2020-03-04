@@ -3,6 +3,7 @@
     <head>
         <?php require 'defaultImports.php';?>
         <link type="text/css" rel="stylesheet" href="resources/travel.css">
+        <script type="text/javascript" src="js/js.js"></script>
 	</head>
     <body class="travel" onload="setMapSize()">
         <?php require 'navigation.php';?>
