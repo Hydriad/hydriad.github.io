@@ -58,7 +58,7 @@
                 </li>
                 <li>
                     <a class="title" href="https://www.webtoons.com/en/thriller/chiller/bongcheon-dong-ghost-horang/viewer?title_no=536&episode_no=22" target="_blank">
-                        Bongcheaon-Don Ghost by Horang
+                        Bongcheon-Don Ghost by Horang
                     </a>
                     <p class="desc">Read carefully and enable sound.</p>
                 </li>
