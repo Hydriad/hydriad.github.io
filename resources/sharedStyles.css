@@ -60,7 +60,7 @@ h2 {
 h3 {
     margin: 0;
     font-family: 'Seaweed Script', 'Arial';
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
@@ -105,7 +105,7 @@ header p {
 .floating-blurb {
     padding: 1rem;
     width: 49%;
-    max-width: 48rem;
+    max-width: 40rem;
     margin: 2rem auto;
     text-align: left;
 }
