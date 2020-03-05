@@ -17,7 +17,7 @@
             <section class="left-nav" id="projects-nav">
                 <ul>
                     <li><a onclick="switchCategory('bracelets')">Friendship bracelets</a></li>
-                    <li><a onclick="switchCategory('hackathon')">Hackthon projects</a></li>
+                    <li><a onclick="switchCategory('hackathon')">Hackathon projects</a></li>
                     <li><a onclick="switchCategory('murals')">Murals</a></li>
                     <li><a onclick="switchCategory('digital-art')">Digital art</a></li>
                 </ul>
