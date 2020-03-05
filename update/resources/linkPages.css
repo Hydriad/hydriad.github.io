@@ -19,3 +19,7 @@
 .career header p {
 	background-color: #f7e1af;
 }
+
+.career .content p {
+	margin-top: 0;
+}

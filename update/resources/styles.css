@@ -54,6 +54,13 @@ h1 {
     text-shadow: 0 5px 10px rgba(0,0,0,0.3), 0 6px 6px rgba(0,0,0,0.8);
 }
 
+h3 {
+    margin: 0;
+    font-family: 'Seaweed Script', 'Arial';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 header p {
     padding: .5rem;
     color: black;

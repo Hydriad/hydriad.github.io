@@ -10,6 +10,13 @@
 	/*bdcab9*/
 }
 
+.projects a {
+	color: #006a00;
+}
+.projects a:hover {
+	color: #00ad00;
+}
+
 .projects .wrapper {
 	display: flex;
 	flex-wrap: nowrap;
@@ -33,11 +40,9 @@
 }
 
 .projects .fixed-left-nav ul li a {
-    text-decoration: none;
-    color: darkgreen;
+    text-decoration: underline;
 }
 .projects .fixed-left-nav ul li a:hover {
-    color: green;
     cursor: pointer;
 }
 
@@ -49,12 +54,6 @@
 	margin: 0;
 	font-family: 'Seaweed Script', 'Arial';
 	font-size: 2.5rem;
-}
-
-.projects h3 {
-	margin: 0;
-	font-family: 'Arial';
-	font-size: 1.1rem;
 }
 
 .projects .category p {
