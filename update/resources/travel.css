@@ -1,0 +1,24 @@
+.travel header {
+	padding: 0;
+	background-image: url("./pics/background-annecy3.jpg");
+    background-position: 0 40%;
+}
+
+.travel h1 {
+	font-size: 4vw;
+	margin-top: .5rem;
+}
+
+.travel,
+.travel nav {
+	background-color: #f7cded;
+}
+
+/*--------------------- MEDIA QUERIES ---------------------*/
+/* for changing window size */
+/* GO FULL WIDTH AT LESS THAN 720 PIXELS */
+@media only screen and (max-width: 720px) {
+    .travel h1 {
+    	font-size: 8vw;
+    }
+}
