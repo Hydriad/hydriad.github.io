@@ -2,7 +2,7 @@
 <html>
     <head>
         <?php require 'defaultImports.php';?>
-        <link type="text/css" rel="stylesheet" href="resources/linkPages.css">
+        <link type="text/css" rel="stylesheet" href="resources/career.css">
 	</head>
     <body class="career">
         <?php require 'navigation.php';?>
@@ -37,7 +37,7 @@
 
             <p>After graduating in 2016 with my Bachelorette of Science in ITWS, I started working as an Associate Software Engineer at Carbon Black. I was one of two women in the twenty-person office, which was intimidating at first, but my teammates and managers have always been supportive and encouraging. Our company has grown much larger since then, went public in 2018, and was acquired by VMWare in 2019. I'm still working on what I am most passionate about, building beautiful user interfaces. Luckily, there is much to be done.</p>
 
-            <p>And so my story continues. Head to my <a href="./contact.php">contact</a> page if you have any questions!</p>
+            <p>And so my story continues. Head to my <a href="./contact.php">contact</a> page if you want to talk!</p>
         </section>
         <?php require 'footer.php';?>
     </body>

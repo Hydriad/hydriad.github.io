@@ -25,19 +25,7 @@
 }
 
 .contact i {
-    margin-right: .3rem;
-}
-
-
-.career header {
-    background-image: url("./pics/background-patagonia2.jpg");
-    background-position: 0 50%;
-}
-
-.career,
-.career nav,
-.career header p {
-	background-color: #f7e1af;
+    margin-right: .4rem;
 }
 
 /*--------------------- MEDIA QUERIES ---------------------*/

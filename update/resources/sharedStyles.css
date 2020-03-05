@@ -64,6 +64,10 @@ h3 {
     font-weight: bold;
 }
 
+p, a {
+    font-family: "Crimson Text", "Times New Roman";
+}
+
 a {
     color: #043aaf;
 }
@@ -100,7 +104,7 @@ header p {
 
 .floating-blurb {
     padding: 1rem;
-    width: 46%;
+    width: 49%;
     max-width: 48rem;
     margin: 2rem auto;
     text-align: left;
