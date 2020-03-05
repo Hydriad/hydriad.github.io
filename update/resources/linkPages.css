@@ -1,12 +1,17 @@
-.contact header {
-    background-image: url("./pics/background-jasper.jpg");
-    background-position: 0 48%;
+.contact .content-full-width {
+    background-image: url("./pics/background-annecy4.jpg");
+    background-position: 10% 47%;
+    padding-top: 1.5rem;
 }
 
 .contact,
 .contact nav,
-.contact header p {
-	background-color: #d2bfb0;
+.contact .floating-blurb {
+	background-color: #c8cdfb;
+}
+
+.contact .floating-blurb {
+    width: 35%;
 }
 
 .contact ul{
@@ -33,4 +38,13 @@
 .career nav,
 .career header p {
 	background-color: #f7e1af;
+}
+
+/*--------------------- MEDIA QUERIES ---------------------*/
+/* for changing window size */
+/* GO FULL WIDTH AT LESS THAN 720 PIXELS */
+@media only screen and (max-width: 720px) {
+    .contact .floating-blurb {
+        width: calc(85% - 2rem);
+    }
 }

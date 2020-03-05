@@ -35,6 +35,7 @@ header {
 }
 
 .home .content-full-width,
+.contact .content-full-width,
 header {
     background-size: cover;
     flex-shrink: 0;
@@ -69,10 +70,6 @@ a {
 a:hover {
     color: #467aed;
 }
-.content p,
-.content-full-width p {
-    margin-top: 0;
-}
 
 header p {
     padding: .5rem;
@@ -96,16 +93,18 @@ header p {
     padding: 1rem;
 }
 
-.background-image{
-    flex-grow: 1; /* for keeping footer on bottom */
-    background-image: url("pics/background-patagonia.jpg");
-	background-size: cover;
-    background-repeat: no-repeat;
-	margin: 0;
-    background-position: bottom;
-    width: 100%;
+.content p,
+.content-full-width p {
+    margin-top: 0;
 }
 
+.floating-blurb {
+    padding: 1rem;
+    width: 46%;
+    max-width: 48rem;
+    margin: 2rem auto;
+    text-align: left;
+}
 
 /* prevents flex items from getting smaller when content is larger than screen */
 .no-shrink {
