@@ -13,7 +13,7 @@
 	padding-top: 1.5rem;
 }
 
-.home .content-full-width .blurb {
+.home .blurb {
     padding: .5rem;
     color: black;
     width: calc(45% + 1rem);
@@ -22,6 +22,6 @@
     display: flex;
 }
 
-.home .content-full-width .blurb .description-paragraphs {
+.home .blurb .description-paragraphs {
 	margin-right: .5rem;
 }

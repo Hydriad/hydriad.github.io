@@ -107,7 +107,7 @@ function setMapSize() {
     const map = document.getElementById('google-map');
     // subtract 4 becuase the idrame comes with a 2px border
     map.style.width = (window.innerWidth - 4) + 'px';
-    // subtract to prevent vertical scrollbar
+    // subtract height of header to prevent vertical scrollbar
     map.style.height = (window.innerHeight - 140) + 'px';
 }
 

@@ -13,3 +13,12 @@
 .travel nav {
 	background-color: #e5c6ec;
 }
+
+/*--------------------- MEDIA QUERIES ---------------------*/
+/* for changing window size */
+/* GO FULL WIDTH AT LESS THAN 800 PIXELS */
+@media only screen and (max-width: 800px) {
+    .travel h1 {
+    	font-size: 9rem;
+    }
+}
