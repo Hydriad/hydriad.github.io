@@ -9,36 +9,48 @@
 	background-color: #d9e0e0;
 }
 
+/* display the left nav and right content on the same axis. */
 .projects .wrapper {
-	display: flex;
-	flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
 }
 
-.projects .fixed-left-nav {
+.projects .left-nav {
 	width: 10.5rem;
 	min-width: 10.5rem;
 	background-color: white;
 }
 
-.projects .fixed-left-nav ul {
+/* The sticky class is added to the nav with JS when it reaches its scroll position */
+.projects .left-nav.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.projects .left-nav ul {
 	list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.projects .fixed-left-nav ul li {
+.projects .left-nav ul li {
     padding: 1rem;
 }
 
-.projects .fixed-left-nav ul li a {
+.projects .left-nav ul li a {
     text-decoration: underline;
 }
-.projects .fixed-left-nav ul li a:hover {
+.projects .left-nav ul li a:hover {
     cursor: pointer;
 }
 
 .projects .right-categories {
-	padding: 1rem;
+    padding: 1rem;
+    /* set width equal to 100% - width of left nav - element's padding on left and right side*/
+    width: calc(100% - 12.5rem);
 }
 
 .projects .videos {
@@ -91,28 +103,20 @@
 	display: none;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-/*.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}*/
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-/*.sticky + .content {
-  padding-top: 60px;
-}*/
-
 /*--------------------- MEDIA QUERIES ---------------------*/
 /* for changing window size */
 /* GO FULL WIDTH AT LESS THAN 720 PIXELS */
 @media only screen and (max-width: 720px) {
-    .projects .fixed-left-nav {
-    	width: unset;
-    	min-width: unset;
+    .projects .left-nav {
+    	width: 5rem;
+    	min-width: 5rem;
     }
 
-    .projects .fixed-left-nav ul li {
+    .projects .right-categories {
+        width: calc(100% - 7rem);
+    }
+
+    .projects .left-nav ul li {
     	padding: 1rem .25rem;
     }
 

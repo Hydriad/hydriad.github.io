@@ -5,6 +5,7 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
         <link type="text/css" rel="stylesheet" href="resources/projects.css">
         <script type="text/javascript" src="js/js.js"></script>
+        <script type="text/javascript" src="js/stickyNav.js"></script>
 	</head>
     <body onload="loadBraceletImages()" class="projects">
         <?php require 'navigation.php';?>
@@ -13,7 +14,7 @@
             <p>I've dabbled in a lot of artistic pursuits, but have lately found joy in making...</p>
         </header>
         <section class="content-full-width wrapper no-shrink">
-            <section class="fixed-left-nav">
+            <section class="left-nav" id="projects-nav">
                 <ul>
                     <li><a onclick="switchCategory('bracelets')">Friendship bracelets</a></li>
                     <li><a onclick="switchCategory('hackathon')">Hackthon projects</a></li>
