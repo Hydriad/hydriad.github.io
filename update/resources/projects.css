@@ -7,14 +7,6 @@
 .projects nav,
 .projects header p {
 	background-color: #c5c7bc;
-	/*bdcab9*/
-}
-
-.projects a {
-	color: #006a00;
-}
-.projects a:hover {
-	color: #00ad00;
 }
 
 .projects .wrapper {
@@ -54,10 +46,6 @@
 	margin: 0;
 	font-family: 'Seaweed Script', 'Arial';
 	font-size: 2.5rem;
-}
-
-.projects .category p {
-	margin-top: 0;
 }
 
 .projects .videos {

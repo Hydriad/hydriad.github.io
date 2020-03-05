@@ -12,7 +12,7 @@
             <h1>Art & Projects</h1>
             <p>I've dabbled in a lot of artistic pursuits, but have lately found joy in making...</p>
         </header>
-        <section class=".content-full-width wrapper no-shrink">
+        <section class="content-full-width wrapper no-shrink">
             <section class="fixed-left-nav">
                 <ul>
                     <li><a onclick="switchCategory('bracelets')">Friendship bracelets</a></li>

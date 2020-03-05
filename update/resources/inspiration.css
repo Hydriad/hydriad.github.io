@@ -14,16 +14,3 @@
 	margin: 0;
 	padding: 0;
 }
-
-.inspiration ul li a {
-	color: #043aaf;
-}
-
-.inspiration ul li a:hover {
-	color: #467aed;
-}
-
-.inspiration ul li .desc {
-	margin-top: .25rem;
-	margin-bottom: 1.5rem;
-}

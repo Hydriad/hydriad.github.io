@@ -16,7 +16,7 @@
                     <h3><a href="https://thecreativeindependent.com/" target="_blank">
                         The Creative Independent
                     </a></h3>
-                    <p class="desc">
+                    <p>
                         An online publication that interviews creators about their work, creative process, and lives. A recent favorite of mine is 
                         <a href="https://thecreativeindependent.com/people/drag-queen-and-intuitive-reader-kiki-slugqueen-on-listening-as-performance/" target="_blank">
                             Kiki Slugqueen on listening as a performance
@@ -27,13 +27,13 @@
                     <h3><a href="https://www.oceanvuong.com/" target="_blank">
                         Ocean Vuong
                     </a></h3>
-                    <p class="desc">A brilliant poet and writer who puts thought behind every word, every sentence.</p>
+                    <p>A brilliant poet and writer who puts thought behind every word, every sentence.</p>
                 </li>
                 <li>
                     <h3><a href="https://zenpencils.com/" target="_blank">
                         Zen Pencils
                     </a></h3>
-                    <p class="desc">
+                    <p>
                         Comic visualizations of quotations from inspiring people, arranged and illustrated by Gavin Aung Than. My favorite two are 
                         <a href="https://zenpencils.com/comic/rilke/" target="_blank">
                             Live the Questions - Rilke
@@ -48,7 +48,7 @@
                     <h3><a href="https://infocivics.com/" target="_blank">
                         Information Civics by Paul Frazee
                     </a></h3>
-                    <p class="desc">
+                    <p>
                         An essay on people's rights on networks, and how we are limited with today's centralized internet.
                     </p>
                 </li>
@@ -56,17 +56,17 @@
                     <h3><a href="https://www.youtube.com/watch?v=nsi0wScnZlk" target="_blank">
                         Changing Seasons by Sea Wolf
                     </a></h3>
-                    <p class="desc">My favorite song.</p>
+                    <p>My favorite song.</p>
                 </li>
                 <li>
                     <h3><a href="https://www.webtoons.com/en/thriller/chiller/bongcheon-dong-ghost-horang/viewer?title_no=536&episode_no=22" target="_blank">
                         Bongcheon-Don Ghost by Horang
                     </a></h3>
-                    <p class="desc">Read carefully and enable sound.</p>
+                    <p>Read carefully and enable sound.</p>
                 </li>
                 <li>
                     <h3>Harmless grafitti</h3>
-                    <p class="desc">
+                    <p>
                         When they're not destroying something beautiful, I love to see how people personalize our urban environments.
                     </p>
                 </li>
