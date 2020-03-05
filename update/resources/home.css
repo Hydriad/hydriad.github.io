@@ -25,3 +25,13 @@
 .home .blurb .description-paragraphs {
 	margin-right: .5rem;
 }
+
+/*--------------------- MEDIA QUERIES ---------------------*/
+/* for changing window size */
+/* GO FULL WIDTH AT LESS THAN 800 PIXELS */
+@media only screen and (max-width: 800px) {
+    .home .content-full-width .blurb {
+        flex-wrap: wrap;
+        width: calc(85% - 2rem);;
+    }
+}

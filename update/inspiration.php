@@ -27,7 +27,7 @@
                     <h3><a href="https://www.oceanvuong.com/" target="_blank">
                         Ocean Vuong
                     </a></h3>
-                    <p>A brilliant poet and writer who puts thought behind every word, every sentence.</p>
+                    <p>A brilliant poet and author who puts thought behind every word, every sentence.</p>
                 </li>
                 <li>
                     <h3><a href="https://zenpencils.com/" target="_blank">

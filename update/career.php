@@ -33,7 +33,7 @@
             <h3>Transitions & working full-time</h3>
             <p>With the confidence I gained from computer camp, in my final year at RPI I became a Resident Assistant for a floor of 50 freshmen. It was challenging and rewarding to try as best I could to help them adjust to life away from home.</p>
 
-            <p>I was starting my own transition at the same time, interviewing with companies for a full-time position. I made it clear that I wanted a UI/UX-focused role -- somewhat to my detriment, because a lot of campus recruiting programs for software engineers were more generalized than that. But I got an offer from Carbon Black, a cybersecurity company, to be on their UI team!</p>
+            <p>I was starting my own transition at the same time, interviewing with companies for a full-time software engineering position. I made it clear that I wanted a UI/UX-focused role -- somewhat to my detriment, because a lot of campus recruiting programs for software engineers were more generalized than that. But I got an offer from Carbon Black, a cybersecurity company, to be on their UI team!</p>
 
             <p>After graduating in 2016 with my Bachelorette of Science in ITWS, I started working as an Associate Software Engineer at Carbon Black. I was one of two women in the twenty-person office, which was intimidating at first, but my teammates and managers have always been supportive and encouraging. Our company has grown much larger since then, went public in 2018, and was acquired by VMWare in 2019. I'm still working on what I am most passionate about, building beautiful user interfaces. Luckily, there is still much to be done.</p>
 

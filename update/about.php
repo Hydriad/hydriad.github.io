@@ -17,9 +17,9 @@
 
             <p>I live near Boston, MA, USA with my boyfriend <a href="https://kyledonahue.net/" target="_blank">Kyle</a>. I built his website, too. We've gone on many adventures together, and I look forward to more.</p>
 
-            <p>Outdoors, I really enjoy hiking, camping, and backpacking. Cross-country skiing is my sport of choice in the winter, and ultimate frisbee in the warmer months. I'm extremely interested in growing my own food and foraging for edible wild plants. I'm limited in that right now because I live in an urban area, but I've had  great success with indoor gardening!</p>
+            <p>Outdoors, I really enjoy hiking, camping, and backpacking. Cross-country skiing is my sport of choice in the winter, and ultimate frisbee in the warmer months. I'm extremely interested in growing my own food and foraging for edible wild plants. Although I'm limited in that right now because I live in an urban area, I've had great success with indoor gardening!</p>
 
-            <a>I'm an artist and a software engineer with a passion for building beautiful things.</a> Check out my <a href="./projects.php">projects</a> page to see what I've made recently.</p>
+            <p>I'm an artist and a software engineer with a passion for building beautiful things. Head to my <a href="./projects.php">projects</a> page to see what I've made recently.</p>
         </section>
         <?php require 'footer.php';?>
     </body>

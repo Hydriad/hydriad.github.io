@@ -50,6 +50,12 @@ h1 {
     text-shadow: 0 5px 10px rgba(0,0,0,0.3), 0 6px 6px rgba(0,0,0,0.8);
 }
 
+h2 {
+    margin: 0;
+    font-family: 'Seaweed Script', 'Arial';
+    font-size: 2.5rem;
+}
+
 h3 {
     margin: 0;
     font-family: 'Seaweed Script', 'Arial';
@@ -121,11 +127,15 @@ footer p {
 
 /*--------------------- MEDIA QUERIES ---------------------*/
 /* for changing window size */
-/* GO FULL WIDTH AT LESS THAN 800 PIXELS */
-@media only screen and (max-width: 800px) {
+/* GO FULL WIDTH AT LESS THAN 720 PIXELS */
+@media only screen and (max-width: 720px) {
     h1 {
         font-size: 9vw;
     }
+    h2 {
+        font-size: 2rem;
+    }
+    
     nav ul li {
         margin: 0 .5rem;
     }
@@ -133,11 +143,4 @@ footer p {
     .content {
         width: calc(98% - 2rem);
     }
-
-    .home .content-full-width .blurb {
-        flex-wrap: wrap;
-        width: calc(85% - 2rem);;
-    }
-
-
 }
