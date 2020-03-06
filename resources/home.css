@@ -12,10 +12,16 @@
 
 .home .floating-blurb {
     display: flex;
+    align-items: flex-start;
 }
 
 .home .floating-blurb .description-paragraphs {
 	margin-right: .5rem;
+}
+
+.home .floating-blurb img {
+    width: 50%;
+    max-width: 16rem;
 }
 
 /*--------------------- MEDIA QUERIES ---------------------*/
@@ -25,5 +31,9 @@
     .home .content-full-width .floating-blurb {
         flex-wrap: wrap;
         width: calc(85% - 2rem);;
+    }
+
+    .home .floating-blurb img {
+        width: 100%;
     }
 }
