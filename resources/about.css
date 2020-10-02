@@ -9,3 +9,11 @@
 	background-color: #ced3b4;
 	/*bdcab9*/
 }
+
+.about .quote {
+	margin: auto;
+	position: relative;
+	width: 30rem;
+	color: grey;
+	font-style: italic;
+}
