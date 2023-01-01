@@ -1,27 +1,11 @@
 .home .content-full-width {
-    background-image: url("./pics/background-jasper2.jpg");
-    background-position: 0 15%;
-    padding-top: 1.5rem;
+    background-image: url("./pics/corkboard1-small.jpg");
 }
 
 .home,
 .home nav,
 .home .floating-blurb {
 	background-color: #dee7f1;
-}
-
-.home .floating-blurb {
-    display: flex;
-    align-items: flex-start;
-}
-
-.home .floating-blurb .description-paragraphs {
-	margin-right: .5rem;
-}
-
-.home .floating-blurb img {
-    width: 50%;
-    max-width: 16rem;
 }
 
 /*--------------------- MEDIA QUERIES ---------------------*/
@@ -31,9 +15,5 @@
     .home .content-full-width .floating-blurb {
         flex-wrap: wrap;
         width: calc(85% - 2rem);;
-    }
-
-    .home .floating-blurb img {
-        width: 100%;
     }
 }

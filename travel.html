@@ -10,24 +10,53 @@
         <script type="text/javascript" src="js/js.js"></script>
 	</head>
     <body class="travel" onload="setMapSize()">
-         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="inspiration.html">Inspiration</a></li>
-                <li><a href="travel.html">Travel</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <header>
-            <h1>Places I've been</h1>
-        </header>
-        <section class="content-full-width no-shrink">
-            <iframe id="google-map" src="https://www.google.com/maps/d/u/0/embed?mid=1sZ3MHUmEYkVSxIWGfOa06bWkjGD1qeuS" width="1200" height="800"></iframe>
+        <section class="content-full-width">
+            <div class="floating-blurb wide">
+                <div class="blurb-content">
+                    <div>
+                        <h1>Places I've been</h1>
+                        <iframe id="google-map" src="https://www.google.com/maps/d/u/0/embed?mid=1sZ3MHUmEYkVSxIWGfOa06bWkjGD1qeuS" width="636" height="500"></iframe>
+                    </div>
+                </div>
+               <footer class="no-shrink">
+                    <p><span class="copyright">©</span> Hayley Schluter 2023. All rights reserved.</p>
+                </footer>
+            </div>
         </section>
-        <footer class="no-shrink">
-            <p><span class="copyright">©</span> Hayley Schluter 2022. All rights reserved.</p>
-        </footer>
+        <div class="edge left">
+            <nav class="polaroid">
+                <a href="index.html" class="home-link">Hayley Schluter</a>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="inspiration.html">Inspiration</a></li>
+                    <li class="highlighted"><a href="travel.html">Travel</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+          <div class="polaroid" style="right: 2rem; top: 32%; transform: rotate(15deg); z-index: 3;">
+                <img src="resources/pics/2022/partnachklamm.jpg" alt="me" />
+                <span>Partnachklamm, Germany '22</span>
+            </div>
+            <div class="polaroid" style="right: 2rem; top: 64%; transform: rotate(-6deg);">
+                <img src="resources/pics/2018/no-transite-solo.jpg" alt="me" />
+                <span>Lago Verde, Argentina '18</span>
+            </div>
+        </div>
+ 
+       <div class="edge right">
+            <div class="polaroid" style="left: 1rem; top: 1rem; transform: rotate(5deg);"> 
+                 <img src="resources/pics/2019/jasper.jpg" alt="me" />
+                <span>Jasper, Canada '19</span>
+            </div>
+            <div class="polaroid" style="left: 2rem; top: 38%; transform: rotate(-13deg);">
+                <img src="resources/pics/2019/me-chamechaud.jpg" alt="me" />
+                <span>Mont Chamechaud, France '19</span>
+            </div>
+            <div class="polaroid" style="left: 1rem; top: 64%;">
+                <img src="resources/pics/2019/coolidge-corner.jpg" alt="me" />
+                <span>Coolidge Corner, MA '19</span>
+            </div>
+        </div>
     </body>
 </html>

@@ -7,65 +7,100 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    box-sizing: border-box;
+    font-size: 15px;
 }
 
 nav {
-	background-color: lightgrey;
-    padding: .15rem;
-    width: calc(100% - .3rem);
+    font-size: 16px;
+
 }
 
-nav ul {
+nav.polaroid {
+    text-align: left;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+}
+
+nav .home-link, 
+nav .home-link:visited,
+nav .home-link:hover {
+    display: block;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav .home-link:hover {
+    background-color: lightseagreen;
+}
+
+ul {
+    font-family: 'Consolas', 'Courier New', 'Arial';
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
+
+ul li.highlighted {
+    background-color: lightseagreen;
+}
+
+ul li:hover {
+    background-color: lightseagreen;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+ul li a:hover {
+    color: inherit;
 }
 
 nav ul li a {
-    text-decoration: none;
+    padding: 0 1rem;
 }
 
 header {
     text-align: center;
-    padding: 2rem 0;
-}
-
-.home .content-full-width,
-.contact .content-full-width,
-header {
-    background-size: cover;
-    flex-shrink: 0;
+    margin-bottom: 1rem;
 }
 
 h1 {
-	color: white;
-    font-size: 6vw; /* width of the font is proportional to width of the page */
-    font-family: 'Seaweed Script', 'Arial';
+	color: lightseagreen;
+    font-size: 3rem;
+    font-family: 'Consolas', 'Courier New', 'Arial';
     font-weight: normal;
     text-align: center;
-    margin: 1rem auto 0 auto;
-    text-shadow: 0 5px 10px rgba(0,0,0,0.3), 0 6px 6px rgba(0,0,0,0.8);
+    margin: 0 auto 1.5rem auto;
+    text-decoration: underline;
+    text-shadow: 3px 3px 0px white;
 }
 
 h2 {
     margin: 0;
-    font-family: 'Seaweed Script', 'Arial';
+    font-family: 'Consolas', 'Courier New', 'Arial';
     font-size: 2.5rem;
 }
 
 h3 {
     margin: 0;
-    font-family: 'Seaweed Script', 'Arial';
-    font-size: 1.6rem;
+    font-family: 'Consolas', 'Courier New', 'Arial';
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
-p, a {
-    font-family: "Crimson Text", "Times New Roman";
+p, a, span {
+    font-family: "Consolas", "Courier New";
 }
 
 a {
@@ -84,35 +119,88 @@ header p {
 }
 
 .content-full-width {
+    padding: 0;
+    background-image: url("./pics/corkboard1-small.jpg");
     flex-grow: 1; /* for keeping footer on bottom */
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.content {
-    flex-grow: 1; /* for keeping footer on bottom */
-    width: 60%;
-    max-width: 48rem;
-    background-color: white;
-    margin: .25rem auto .25rem auto;
-    padding: 1rem;
+.edge {
+    height: 100vh;
+    position: fixed;
+    width: calc(calc(100% - 40rem) / 2);
+    top: 0;
 }
-
-.content p,
-.content-full-width p {
-    margin-top: 0;
+.edge.right {
+    right: 0;
+}
+.edge.left {
+    left: 0;
 }
 
 .floating-blurb {
-    padding: 1rem;
-    width: 49%;
-    max-width: 40rem;
-    margin: 2rem auto;
+    box-sizing: border-box;
+    padding: 0 7rem;
+    width: 40rem;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+}
+.floating-blurb.wide {
+    padding: 0;
+}
+.blurb-content {
+    padding-top: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* prevents flex items from getting smaller when content is larger than screen */
 .no-shrink {
     flex-shrink: 0;
+}
+
+.polaroid {
+    width: 200px;
+    height: 200px;
+    border: 1rem solid white;
+    border-bottom-width: 3rem;
+    background-color: #333;
+    padding: 0;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    transition: all .20s linear;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    /* overflow: hidden; <-- might cut off label if i want to add one */
+}
+.polaroid:hover {
+    z-index: 4;
+}
+
+.polaroid img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.polaroid span {
+    margin-top: 1rem;
+    font-size: 13px;
+    display: none;
+}
+.polaroid:hover span {
+    display: block;
 }
 
 footer {

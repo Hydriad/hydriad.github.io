@@ -105,8 +105,9 @@ switchCategory = (id) => {
 // on the travel page, set the width and height of the map
 function setMapSize() {
     const map = document.getElementById('google-map');
-    // subtract 4 becuase the idrame comes with a 2px border
-    map.style.width = (window.innerWidth - 4) + 'px';
+    // subtract 4px becuase the idrame comes with a 2px border
+    // map.style.width = (window.innerWidth - 4) + 'px';
+
     // subtract height of header to prevent vertical scrollbar
-    map.style.height = (window.innerHeight - 140) + 'px';
+    map.style.height = (window.innerHeight - 200) + 'px';
 }

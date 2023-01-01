@@ -1,26 +1,16 @@
-.contact .content-full-width {
-    background-image: url("./pics/background-annecy4.jpg");
-    background-position: 10% 47%;
-    padding-top: 1.5rem;
-}
-
 .contact,
 .contact nav,
 .contact .floating-blurb {
 	background-color: #c8cdfb;
 }
 
-.contact .floating-blurb {
-    width: 35%;
-}
-
-.contact ul{
+.contact .blurb-content ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.contact ul li {
+.contact .blurb-content ul li {
     margin-bottom: 1rem;
 }
 

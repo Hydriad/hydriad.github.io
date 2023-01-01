@@ -1,13 +1,7 @@
-.about header {
-    background-image: url("./pics/background-patagonia3.jpg");
-    background-position: 0 60%;
-}
-
 .about,
 .about nav,
-.about header p {
+.about .floating-blurb {
 	background-color: #ced3b4;
-	/*bdcab9*/
 }
 
 .about .quote {
