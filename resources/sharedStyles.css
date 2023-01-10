@@ -51,6 +51,7 @@ ul {
 
 ul li.highlighted {
     background-color: lightseagreen;
+    font-weight: bold;
 }
 
 ul li:hover {
@@ -66,7 +67,8 @@ ul li a:hover {
     color: inherit;
 }
 
-nav ul li a {
+nav ul li a,
+.subnav ul li a {
     padding: 0 1rem;
 }
 
@@ -104,10 +106,12 @@ p, a, span {
 }
 
 a {
-    color: #043aaf;
+    color: lightseagreen;
 }
 a:hover {
-    color: #467aed;
+    color: black;
+    background-color: lightseagreen;
+    text-decoration: none;
 }
 
 header p {
@@ -197,9 +201,6 @@ header p {
 .polaroid span {
     margin-top: 1rem;
     font-size: 13px;
-    display: none;
-}
-.polaroid:hover span {
     display: block;
 }
 
@@ -217,7 +218,14 @@ footer p {
 }
 
 /*--------------------- MEDIA QUERIES ---------------------*/
-/* for changing window size */
+
+/* Move nav to top at < 1150px */
+@media only screen and (max-width: 1150px) {
+    .mobile-nav {
+        display: visible;
+    }
+}
+
 /* GO FULL WIDTH AT LESS THAN 720 PIXELS */
 @media only screen and (max-width: 720px) {
     h1 {

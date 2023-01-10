@@ -5,121 +5,113 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type="text/css" rel="stylesheet" href="resources/sharedStyles.css">
-        <link href="https://fonts.googleapis.com/css?family=Seaweed+Script|Crimson+Text&display=swap" rel="stylesheet">
         <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
         <link type="text/css" rel="stylesheet" href="resources/projects.css">
         <script type="text/javascript" src="js/js.js"></script>
-        <script type="text/javascript" src="js/stickyNav.js"></script>
 	</head>
     <body onload="loadBraceletImages()" class="projects">
-        <nav class="polaroid">
-            <a href="index.html" class="home-link">Hayley Schluter</a>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li class="highlighted"><a href="projects.html">Projects</a></li>
-                <li><a href="inspiration.html">Inspiration</a></li>
-                <li><a href="travel.html">Travel</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <header>
-            <h1>Art & Projects</h1>
-            <p>I've dabbled in a lot of artistic pursuits, but have lately found joy in making...</p>
-        </header>
-        <section class="content-full-width wrapper no-shrink">
-            <section class="left-nav" id="projects-nav">
-                <ul>
-                    <li><a onclick="switchCategory('bracelets')">Friendship bracelets</a></li>
-                    <li><a onclick="switchCategory('hackathon')">Hackathon projects</a></li>
-                    <li><a onclick="switchCategory('murals')">Murals</a></li>
-                    <li><a onclick="switchCategory('digital-art')">Digital art</a></li>
-                </ul>
-            </section>
-            <seciton class="right-categories">
-                <!-- Friendship bracelets -->
-                <div class="category" id="bracelets">
-                    <h2>Friendship bracelets</h2>
-                    <p class="desc">
-                        I usually follow patterns from <a href="http://friendship-bracelets.net" target="_blank">friendship-bracelets.net</a>, but shoutout to Heather's Friendship Bracelets for getting me started!
-                    </p>
-                    <div class="gallery-vertical" id="gallery-bracelets"></div>
-                </div>
+        <section class="content-full-width no-shrink">
+            <div class="floating-blurb">
+                <div class="blurb-content">
+                    <div>
+                        <h1>Art & Projects</h1>
+                        <ul class="tabs">
+                            <li class="tab bracelets selected"><a onclick="switchCategory('bracelets')">Bracelets</a></li>
+                            <li class="tab hackathon"><a onclick="switchCategory('hackathon')">Hackathons</a></li>
+                            <li class="tab murals"><a onclick="switchCategory('murals')">Murals</a></li>
+                            <li class="tab digital-art"><a onclick="switchCategory('digital-art')">Digital art</a></li>
+                            <li class="tab collages"><a onclick="switchCategory('collages')">Collages</a></li>
+                        </ul>
+                        <!-- Friendship bracelets -->
+                        <div class="category" id="bracelets">
+                            <div class="gallery-vertical" id="gallery-bracelets"></div>
+                        </div>
 
-                <!-- Hackathon projects -->
-                <div class="category" id="hackathon">
-                    <h2>Hackathon projects</h2>
-                    <p class="desc">
-                        Here are some hackathon projects I've done that I'm proud of.
-                    </p>
-                    <div class="videos">
-                        <div class="video">
-                            <h3>Programmable RGB LEDs (2017)</h3>
-                            <p>Winner of "Prettiest Hack" and the "Neato Burrito" awards.</p>
-                            <iframe width="450" height="300" src="https://www.youtube.com/embed/jZtNySYtD6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- Hackathon projects -->
+                        <div class="category" id="hackathon">
+                            <div class="videos">
+                                <div class="video">
+                                    <h3>Scroll to Recipe (2020)</h3>
+                                    <p>A complete <a href="https://chrome.google.com/webstore/detail/scroll-to-recipe/pofminnplcddoijicgjoecfadidiikom?hl=en-US" target="_blank">Chrome extension</a> that scrolls users straight to the ingredients list on recipe blogs. Winner of "Best non-company hack".</p>
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/g03qEy-DyjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video">
+                                    <h3>Laid-back Backpack (2020)</h3>
+                                    <p>An experimental mobile game built with Unity in 2D.</p>
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/ygI-7PKIJr4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video">
+                                    <h3>Rebuilding my personal site (2020)</h3>
+                                    <p>I changed this site to be a more genuine representation of myself.</p>
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/jBH7UpQxEb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video">
+                                    <h3>Peer to Peer Network research (2019)</h3>
+                                    <p>I researched the P2P protocols Dat and Scuttlebutt. Winner of "Best non-company hack".</p>
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/8vH67aJRQNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video">
+                                    <h3>otakustats.moe (2019)</h3>
+                                    <p>A website to bring better searching and statistics to fellow anime lovers.</p>
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/zbmO4_WXTyw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video">
+                                    <h3>Kyle's photography website (2018)</h3>
+                                    <p>A website I made for a friend to show off his photography skills.</p>
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/eH65rVPF_Hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video">
+                                    <h3>Programmable RGB LEDs (2017)</h3>
+                                    <p>Winner of "Prettiest Hack" and the "Neato Burrito" awards.</p>
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/jZtNySYtD6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
-                        <div class="video">
-                            <h3>Kyle's photography website (2018)</h3>
-                            <p>A website I made for a friend to show off his photography skills.</p>
-                            <iframe width="450" height="300" src="https://www.youtube.com/embed/eH65rVPF_Hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <!-- Murals -->
+                        <div class="category" id="murals">
+                            <p class="desc">
+                                I led the painting of two colorful murals in my office, where coworkers helped paint them over the course of a few months.
+                            </p>
+                            <h3>Mountains (2017)</h3>
+                            <p class="desc">This one took two months to complete, with two coats of paint for each of the six layers of mountains. I drew a general guide of the mountain shapes for us to follow, but we free-handed the gentle bumps on each layer to make it more realistic.</p>
+                            <div class="gallery-horizontal" id="gallery-mural1"></div>
+                            <h3>Colorful triangles (2018 - 2019)</h3>
+                            <p class="desc">This one took a little over three months to complete. Again, two coats per triangle. It was difficult because we could never paint triangles that were adjacent to each other at the same time. In the future I'd do less colors (this one uses nine), and mark the triangles on the wall in pencil instead of pen, as the pen ended up showing through some of the lighter colors. But I really love how it turned out!</p>
+                            <div class="gallery-horizontal" id="gallery-mural2"></div>
                         </div>
-                        <div class="video">
-                            <h3>otakustats.moe (2019)</h3>
-                            <p>A website to bring better searching and statistics to fellow anime lovers.</p>
-                            <iframe width="450" height="300" src="https://www.youtube.com/embed/zbmO4_WXTyw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <!-- Digital art -->
+                        <div class="category" id="digital-art">
+                            <p class="desc">
+                                There is so much freedom and room for experimetation in digital art.
+                            </p>
+                            <div class="gallery-vertical" id="gallery-digital-art"></div>
                         </div>
-                        <div class="video">
-                            <h3>Peer to Peer Network research (2019)</h3>
-                            <p>I researched the P2P protocols Dat and Scuttlebutt. Winner of "Best non-company hack".</p>
-                            <iframe width="450" height="300" src="https://www.youtube.com/embed/8vH67aJRQNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <!-- Collages -->
+                        <div class="category" id="collages">
+                            <div class="gallery-vertical" id="gallery-collages"></div>
                         </div>
-                        <div class="video">
-                            <h3>Rebuilding my personal site (2020)</h3>
-                            <p>I changed this site to be a more genuine representation of myself.</p>
-                            <iframe width="450" height="300" src="https://www.youtube.com/embed/jBH7UpQxEb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="video">
-                            <h3>Laid-back Backpack (2020)</h3>
-                            <p>An experimental mobile game built with Unity in 2D.</p>
-                            <iframe width="450" height="300" src="https://www.youtube.com/embed/ygI-7PKIJr4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="video">
-                            <a href="https://chrome.google.com/webstore/detail/scroll-to-recipe/pofminnplcddoijicgjoecfadidiikom?hl=en-US" target="_blank">
-                                <h3>Scroll to Recipe (2020)</h3>
-                            </a>
-                            <p>A complete Chrome extension that scrolls users straight to the ingredients list on recipe blogs. Winner of "Best non-company hack".</p>
-                            <iframe width="450" height="300" src="https://www.youtube.com/embed/g03qEy-DyjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        
                     </div>
                 </div>
-
-                <!-- Murals -->
-                <div class="category" id="murals">
-                    <h2>Murals</h2>
-                    <p class="desc">
-                        I led the painting of two colorful murals in my office, where coworkers helped paint them over the course of a few months.
-                    </p>
-                    <h3>Mountains (2017)</h3>
-                    <p class="desc">This one took two months to complete, with two coats of paint for each of the six layers of mountains. I drew a general guide of the mountain shapes for us to follow, but we free-handed the gentle bumps on each layer to make it more realistic.</p>
-                    <div class="gallery-horizontal" id="gallery-mural1"></div>
-                    <h3>Colorful triangles (2018 - 2019)</h3>
-                    <p class="desc">This one took a little over three months to complete. Again, two coats per triangle. It was difficult because we could never paint triangles that were adjacent to each other at the same time. In the future I'd do less colors (this one uses nine), and mark the triangles on the wall in pencil instead of pen, as the pen ended up showing through some of the lighter colors. But I really love how it turned out!</p>
-                    <div class="gallery-horizontal" id="gallery-mural2"></div>
-                </div>
-
-                 <!-- Digital art -->
-                <div class="category" id="digital-art">
-                    <h2>Digital art</h2>
-                    <p class="desc">
-                        There is so much freedom and room for experimetation in digital art.
-                    </p>
-                    <div class="gallery-vertical" id="gallery-digital-art"></div>
-                </div>
-
-            </seciton>
+                <footer class="no-shrink">
+                    <p><span class="copyright">©</span> Hayley Schluter 2023. All rights reserved.</p>
+                </footer>
+            </div>
         </section>
-        <footer class="no-shrink">
-            <p><span class="copyright">©</span> Hayley Schluter 2023. All rights reserved.</p>
-        </footer>
+    
+        <div class="edge left">
+            <nav class="polaroid">
+                <a href="index.html" class="home-link">Hayley Schluter</a>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li class="highlighted"><a href="projects.html">Projects</a></li>
+                    <li><a href="inspiration.html">Inspiration</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </body>
 </html>

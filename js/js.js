@@ -78,9 +78,26 @@ loadDigitalArtImages = () => {
     });
 }
 
+loadCollageImages = () => {
+    $('div#gallery-collages').loadFlickrPhotos({ 
+        photoset_id: '72157713029383051',
+        classes: ''
+    });
+}
+
 loadMuralImages = () => {
     loadMural1Images();
     loadMural2Images();
+}
+
+setSelectedTab = (className) => {
+    const allTabs = document.getElementsByClassName("tab");
+    Array.from(allTabs).forEach((tab) => {
+        tab.classList.remove("selected");
+    })
+
+    const selectedTab = document.getElementsByClassName(className)[0];
+    selectedTab.classList.add("selected");
 }
 
 // on the projects page, show or hide content based on which category has been selected
@@ -88,6 +105,8 @@ loadMuralImages = () => {
 switchCategory = (id) => {
     $('.category').hide();
     $(('#' + id)).show();
+
+    setSelectedTab(id);
 
     switch(id) {
         case 'bracelets': 
@@ -98,6 +117,9 @@ switchCategory = (id) => {
             break;
         case 'digital-art': 
             loadDigitalArtImages();
+            break;
+        case 'collages': 
+            loadCollageImages();
             break;
     }
 }

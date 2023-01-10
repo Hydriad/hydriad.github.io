@@ -1,56 +1,43 @@
-.projects header {
-    background-image: url("./pics/background-patagonia.jpg");
-    background-position: 0 50%;
-}
-
 .projects,
 .projects nav,
-.projects header p {
+.projects .floating-blurb {
 	background-color: #d9e0e0;
 }
 
-/* display the left nav and right content on the same axis. */
-.projects .wrapper {
+.projects .floating-blurb {
+    width: 60%;
+    max-width: 55rem;
+    padding: 0 2rem;
+    justify-content: flex-start;
+}
+
+.projects .floating-blurb .blurb-content {
+    justify-content: flex-start;
+}
+
+.projects p {
+    margin-top: 0;
+}
+
+.projects ul.tabs {
+    list-style-type: none;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-bottom: 1px grey solid;
 }
 
-.projects .left-nav {
-	width: 10.5rem;
-	min-width: 10.5rem;
-	background-color: white;
-}
-
-/* The sticky class is added to the nav with JS when it reaches its scroll position */
-.projects .left-nav.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-}
-
-.projects .left-nav ul {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.projects .left-nav ul li {
-    padding: .75rem;
-}
-
-.projects .left-nav ul li a {
-    text-decoration: underline;
-}
-.projects .left-nav ul li a:hover {
+.projects ul.tabs li {
+    text-align: center;
+    padding: .5rem;
     cursor: pointer;
+    flex-grow: 1;
 }
 
-.projects .right-categories {
-    padding: 1rem;
-    /* set width equal to 100% - width of left nav - element's padding on left and right side*/
-    width: calc(100% - 12.5rem);
+.projects ul.tabs li.selected {
+    background-color: lightseagreen;
+    font-weight: bold;
 }
 
 .projects .videos {
@@ -60,21 +47,30 @@
 }
 
 .projects .videos .video {
-	margin: 0 .25rem 1.5rem .25rem;
+	margin-bottom: 2rem;
 	flex: 1;
 }
 
 .projects .gallery-horizontal ul {
 	padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 .projects .gallery-horizontal ul img {
-    width: 32%;
-    padding-right: .25rem;
+    width: 100%;
 }
 
 .projects .gallery-horizontal ul li {
-	display: inline;
+    width: 50%;
+    padding-right: 0.25rem;
+    box-sizing: border-box;
+}
+
+.projects .gallery-horizontal ul li:hover, 
+.projects .gallery-vertical ul li:hover {
+    background-color: unset;
 }
 
 /* DOCS https://css-tricks.com/seamless-responsive-photo-grid/ */
@@ -83,11 +79,11 @@
     padding: 0 0 .25rem 0;
 }
 
-.projects .gallery-vertical ul {
+.projects .gallery-vertical {
 	list-style-type: none;
     margin: 0;
     padding: 0;
-    column-count: 4;
+    column-count: 3;
     line-height: 0;
     column-gap: .25rem;
 }
@@ -107,11 +103,6 @@
 /* for changing window size */
 /* GO FULL WIDTH AT LESS THAN 720 PIXELS */
 @media only screen and (max-width: 720px) {
-    .projects .left-nav {
-    	width: 5rem;
-    	min-width: 5rem;
-    }
-
     .projects .right-categories {
         width: calc(100% - 7rem);
     }
