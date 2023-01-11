@@ -257,11 +257,10 @@ nav.mobile-nav ul li a {
     }
 }
 
-/* GO FULL WIDTH AT LESS THAN 720 PIXELS */
 @media only screen and (max-width: 650px) {
-    nav.mobile-nav,
+    nav.mobile-nav li,
     footer {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .edge {
@@ -270,10 +269,5 @@ nav.mobile-nav ul li a {
 
     .blurb-content {
         padding: 0 5%;
-    }
-
-    .floating-blurb {
-        z-index: 2;
-        margin: 0 1rem
     }
 }

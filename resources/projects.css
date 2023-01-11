@@ -49,8 +49,8 @@
 
 .projects .videos {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: center;
     text-align: center;
     padding: 0 4rem;
 }
@@ -114,8 +114,7 @@
 }
 
 /*--------------------- MEDIA QUERIES ---------------------*/
-/* GO FULL WIDTH AT LESS THAN 720 PIXELS */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 650px) {
     .projects .gallery-vertical ul {
     	column-count: 2;
     }
@@ -129,8 +128,16 @@
         width: 100%;
     }
 
-    .projects ul.tabs {
-        font-size: 13px;
+    .projects .floating-blurb .blurb-content {
+        padding: 1rem .5rem;
+    }
+
+    .projects .videos {
+        padding: 0;
+    }
+
+    .projects ul.tabs li {
+        font-size: 11px;
     }
 
 }
