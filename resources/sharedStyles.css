@@ -156,6 +156,10 @@ header p {
     justify-content: space-between;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 }
+
+.floating-blurb.wide {
+    overflow-x: hidden;
+}
 .floating-blurb.wide .blurb-content{
     padding: 0;
 }
@@ -269,5 +273,9 @@ nav.mobile-nav ul li a {
 
     .blurb-content {
         padding: 0 5%;
+    }
+
+    h1 {
+        font-size: 2rem;
     }
 }
