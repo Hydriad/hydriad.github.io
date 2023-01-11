@@ -97,6 +97,10 @@
     column-gap: .25rem;
 }
 
+.projects .gallery-vertical.two-col {
+    column-count: 2;
+}
+
 .projects .gallery-vertical ul li {
 	text-align: center;
 }

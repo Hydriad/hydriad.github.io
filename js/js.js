@@ -80,7 +80,7 @@ loadDigitalArtImages = () => {
 
 loadCollageImages = () => {
     $('div#gallery-collages').loadFlickrPhotos({ 
-        photoset_id: '72157713029383051',
+        photoset_id: '72177720305141461',
         classes: ''
     });
 }
