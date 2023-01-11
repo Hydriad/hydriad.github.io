@@ -3,12 +3,3 @@
 .travel .floating-blurb {
 	background-color: #ffe0f8;
 }
-
-/*--------------------- MEDIA QUERIES ---------------------*/
-/* for changing window size */
-/* GO FULL WIDTH AT LESS THAN 720 PIXELS */
-@media only screen and (max-width: 720px) {
-    .travel h1 {
-    	font-size: 8vw;
-    }
-}

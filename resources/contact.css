@@ -17,12 +17,3 @@
 .contact i {
     margin-right: .4rem;
 }
-
-/*--------------------- MEDIA QUERIES ---------------------*/
-/* for changing window size */
-/* GO FULL WIDTH AT LESS THAN 720 PIXELS */
-@media only screen and (max-width: 720px) {
-    .contact .floating-blurb {
-        width: calc(85% - 2rem);
-    }
-}

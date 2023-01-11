@@ -149,7 +149,6 @@ header p {
 
 .floating-blurb {
     box-sizing: border-box;
-    padding: 0 7rem;
     width: 40rem;
     text-align: left;
     display: flex;
@@ -157,10 +156,11 @@ header p {
     justify-content: space-between;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 }
-.floating-blurb.wide {
+.floating-blurb.wide .blurb-content{
     padding: 0;
 }
 .blurb-content {
+    padding: 0 7rem;
     padding-top: 1rem;
     flex-grow: 1;
     display: flex;
@@ -186,7 +186,6 @@ header p {
     z-index: 1;
     position: absolute;
     text-align: center;
-    /* overflow: hidden; <-- might cut off label if i want to add one */
 }
 .polaroid:hover {
     z-index: 4;
@@ -217,29 +216,64 @@ footer p {
     margin: .5rem 0 .25rem 0;
 }
 
+nav.mobile-nav {
+    display: none;
+}
+
+nav.mobile-nav ul {
+    font-size: 15px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border-bottom: 1px solid lightseagreen;
+}
+
+nav.mobile-nav ul li {
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+nav.mobile-nav ul li a {
+    padding: .5rem 0;
+}
+
 /*--------------------- MEDIA QUERIES ---------------------*/
 
 /* Move nav to top at < 1150px */
 @media only screen and (max-width: 1150px) {
-    .mobile-nav {
-        display: visible;
+    nav.mobile-nav {
+        display: block;
+    }
+
+    nav.polaroid {
+        display: none;
     }
 }
 
 /* GO FULL WIDTH AT LESS THAN 720 PIXELS */
-@media only screen and (max-width: 720px) {
-    h1 {
-        font-size: 9vw;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    
-    nav ul li {
-        margin: 0 .5rem;
+@media only screen and (max-width: 650px) {
+    nav.mobile-nav,
+    footer {
+        font-size: 13px;
     }
 
-    .content {
-        width: calc(98% - 2rem);
+    .edge {
+        display: none;
+    }
+
+    .blurb-content {
+        padding: 0 5%;
+    }
+
+    .floating-blurb {
+        z-index: 2;
+        margin: 0 1rem
     }
 }

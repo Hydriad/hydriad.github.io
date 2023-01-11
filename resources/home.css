@@ -7,13 +7,3 @@
 .home .floating-blurb {
 	background-color: #dee7f1;
 }
-
-/*--------------------- MEDIA QUERIES ---------------------*/
-/* for changing window size */
-/* GO FULL WIDTH AT LESS THAN 800 PIXELS */
-@media only screen and (max-width: 800px) {
-    .home .content-full-width .floating-blurb {
-        flex-wrap: wrap;
-        width: calc(85% - 2rem);;
-    }
-}

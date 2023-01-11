@@ -5,18 +5,21 @@
 }
 
 .projects .floating-blurb {
-    width: 60%;
-    max-width: 55rem;
-    padding: 0 2rem;
+    width: 50rem;
     justify-content: flex-start;
 }
 
 .projects .floating-blurb .blurb-content {
     justify-content: flex-start;
+    padding: 1rem 2rem;
 }
 
 .projects p {
     margin-top: 0;
+}
+
+.projects .edge {
+    width: calc(calc(100% - 50rem) / 2);
 }
 
 .projects ul.tabs {
@@ -30,9 +33,13 @@
 
 .projects ul.tabs li {
     text-align: center;
-    padding: .5rem;
+    padding: 0;
     cursor: pointer;
     flex-grow: 1;
+}
+
+.projects ul.tabs li a {
+    padding: .5rem 0;
 }
 
 .projects ul.tabs li.selected {
@@ -44,6 +51,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+    text-align: center;
+    padding: 0 4rem;
 }
 
 .projects .videos .video {
@@ -94,23 +103,15 @@
 
 /* when the projects page loads, only display the friendship bracelets category. */
 .projects #murals,
-.projects #hackathon,
+.projects #bracelets
+.projects #collages,
 .projects #digital-art {
 	display: none;
 }
 
 /*--------------------- MEDIA QUERIES ---------------------*/
-/* for changing window size */
 /* GO FULL WIDTH AT LESS THAN 720 PIXELS */
 @media only screen and (max-width: 720px) {
-    .projects .right-categories {
-        width: calc(100% - 7rem);
-    }
-
-    .projects .left-nav ul li {
-    	padding: 1rem .25rem;
-    }
-
     .projects .gallery-vertical ul {
     	column-count: 2;
     }
@@ -119,5 +120,13 @@
 	    width: 100%;
 	    padding-right: 0;
 	}
+
+    .projects .floating-blurb {
+        width: 100%;
+    }
+
+    .projects ul.tabs {
+        font-size: 13px;
+    }
 
 }

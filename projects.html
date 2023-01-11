@@ -9,23 +9,29 @@
         <link type="text/css" rel="stylesheet" href="resources/projects.css">
         <script type="text/javascript" src="js/js.js"></script>
 	</head>
-    <body onload="loadBraceletImages()" class="projects">
+    <body class="projects">
         <section class="content-full-width no-shrink">
             <div class="floating-blurb">
+                <nav class="mobile-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="highlighted"><a href="projects.html">Projects</a></li>
+                        <li><a href="inspiration.html">Inspiration</a></li>
+                        <li><a href="travel.html">Travel</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
                 <div class="blurb-content">
                     <div>
                         <h1>Art & Projects</h1>
                         <ul class="tabs">
-                            <li class="tab bracelets selected"><a onclick="switchCategory('bracelets')">Bracelets</a></li>
-                            <li class="tab hackathon"><a onclick="switchCategory('hackathon')">Hackathons</a></li>
+                            <li class="tab hackathon selected"><a onclick="switchCategory('hackathon')">Hackathons</a></li>
+                            <li class="tab bracelets"><a onclick="switchCategory('bracelets')">Bracelets</a></li>
                             <li class="tab murals"><a onclick="switchCategory('murals')">Murals</a></li>
                             <li class="tab digital-art"><a onclick="switchCategory('digital-art')">Digital art</a></li>
                             <li class="tab collages"><a onclick="switchCategory('collages')">Collages</a></li>
                         </ul>
-                        <!-- Friendship bracelets -->
-                        <div class="category" id="bracelets">
-                            <div class="gallery-vertical" id="gallery-bracelets"></div>
-                        </div>
 
                         <!-- Hackathon projects -->
                         <div class="category" id="hackathon">
@@ -57,7 +63,7 @@
                                 </div>
                                 <div class="video">
                                     <h3>Kyle's photography website (2018)</h3>
-                                    <p>A website I made for a friend to show off his photography skills.</p>
+                                    <p>A <a href="https://kyledonahue.net" target="_blank">website</a> I made for a friend to show off his photography skills.</p>
                                     <iframe width="450" height="300" src="https://www.youtube.com/embed/eH65rVPF_Hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div class="video">
@@ -66,6 +72,11 @@
                                     <iframe width="450" height="300" src="https://www.youtube.com/embed/jZtNySYtD6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </div>
+                        </div>
+
+                        <!-- Friendship bracelets -->
+                        <div class="category" id="bracelets">
+                            <div class="gallery-vertical" id="gallery-bracelets"></div>
                         </div>
 
                         <!-- Murals -->
